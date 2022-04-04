@@ -13,8 +13,9 @@ public class Tv {
 	@Autowired
 	private Remocon remocon;
 	
-	public Tv(Speaker spk) {
+	public Tv(Speaker spk, Remocon remocon) {
 		this.spk = spk;
+		this.remocon = remocon;
 	}
 		
 	public void powerOn() {

@@ -21,8 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
  *    
  *   @Autowired
  *    - 참조변수(객체)에 스프링 컨테이너로 부터 해당 객체를 찾아서 주입해주는 어노테이션
- * 
- * 
  */
 
 @RestController
@@ -35,7 +33,9 @@ public class IoCTest {
 		
 		// IoC/DI 적용하지 않을 경우
 		Speaker spk = new Speaker();
-		Tv tv = new Tv(spk);
+		Remocon remocon = new Remocon();
+		
+		Tv tv = new Tv(spk, remocon);
 		
 		tv.powerOn();
 		tv.chUp();

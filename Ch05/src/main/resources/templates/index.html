@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>index</title>
+	</head>
+	<body>
+		<h3 th:text="${title}">Thymeleaf 실습</h3>
+		
+		<h4>기본출력</h4>
+		<p>[[${hello}]]</p>
+		<p th:text="${hello}">기본 출력 속성</p>
+		<p>
+			아이디 : [[${userVo.uid}]]<br/>
+			이 름 : [[${userVo.name}]]<br/>
+			휴대폰 : [[${userVo.hp}]]<br/>
+			나 이 : [[${userVo.age}]]<br/>
+		</p>
+		
+		<h4>타임리프 조건문</h4>
+		
+		<h4>타임리프 반복문</h4>
+		
+		<h4>타임리프 링크</h4>
+		
+	</body>
+</html>

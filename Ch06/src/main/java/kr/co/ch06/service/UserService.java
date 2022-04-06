@@ -1,5 +1,7 @@
 package kr.co.ch06.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,8 +20,8 @@ public class UserService {
 	public void selectUser() {
 		dao.selectUser();
 	}
-	public void selectUsers() {
-		dao.selectUsers();
+	public List<UserVo> selectUsers(){
+		return dao.selectUsers();
 	}
 	public void updateUser() {
 		dao.updateUser();

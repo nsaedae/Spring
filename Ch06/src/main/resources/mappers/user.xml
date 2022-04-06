@@ -5,7 +5,9 @@
 		INSERT INTO `User1` VALUES (#{uid}, #{name}, #{hp}, #{age});
 	</insert>
 	<select id="selectUser"></select>
-	<select id="selectUsers"></select>
+	<select id="selectUsers" resultType="kr.co.ch06.vo.UserVo">
+		SELECT * FROM `User1`;	
+	</select>
 	<update id="updateUser"></update>
 	<delete id="deleteUser"></delete>
 </mapper>

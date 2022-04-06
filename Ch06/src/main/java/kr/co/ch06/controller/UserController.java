@@ -40,6 +40,23 @@ public class UserController {
 		return "/user/list";
 	}
 	
+	@GetMapping("/user/modify")
+	public String modify(String uid, Model model) {
+		
+		// 수정 데이터요청
+		UserVo user = service.selectUser(uid);
+		model.addAttribute("user", user);
+		
+		return "/user/modify";
+	}
 	
+	@PostMapping("/user/modify")
+	public String modify(UserVo vo) {
+		
+		// 수정요청
+		service.updateUser(vo);
+		
+		return "redirect:/user/list";
+	}
 	
 }

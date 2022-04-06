@@ -9,8 +9,8 @@ import kr.co.ch06.vo.UserVo;
 @Repository
 public interface UserDao {
 	public void insertUser(UserVo vo);
-	public void selectUser();
+	public UserVo selectUser(String uid);
 	public List<UserVo> selectUsers();
-	public void updateUser();
+	public void updateUser(UserVo vo);
 	public void deleteUser();
 }

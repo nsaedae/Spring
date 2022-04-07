@@ -2,7 +2,7 @@ package kr.co.ch06.vo;
 
 import lombok.Data;
 
-@Data
+@Data // @Data = @Getter + @Setter
 public class CustomerVo {
 
 	private int custid;

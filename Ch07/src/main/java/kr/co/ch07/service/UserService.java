@@ -1,6 +1,7 @@
 package kr.co.ch07.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,16 +15,18 @@ public class UserService {
 	private UserRepo repo;
 	
 	public void insertUser(UserVo vo) {
-		repo.save(vo);
+		repo.save(vo); // Insert ~
 	}
 	public UserVo selectUser(String uid) {
-		return null;
+		return repo.findById(uid).get();
 	}
 	public List<UserVo> selectUsers(){
-		return null;
+		return repo.findAll();
 	}
 	public void updateUser(UserVo vo) {
+		repo.save(vo); // Update ~
 	}
-	public void deleteUser() {
+	public void deleteUser(String uid) {
+		repo.deleteById(uid);
 	}
 }

@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.co.ch07.service.UserService;
 import kr.co.ch07.vo.UserVo;
@@ -31,9 +32,25 @@ public class UserController {
 	}
 	
 	@GetMapping("/user/list")
-	public String list(Model model) {
+	public String list(Model model, String sort, Integer type) {
 		
-		List<UserVo> users = service.selectUsers();
+		List<UserVo> users = null;
+		
+		if(sort != null) {
+			if(sort.equals("name")) {
+				users = service.selectUsersOrderByName();
+			}else if(sort.equals("age") && type == 1) {
+				users = service.selectUsersOrderByAgeAsc();
+			}else if(sort.equals("age") && type == 2) {
+				users = service.selectUsersOrderByAgeDesc();
+			}else if(sort.equals("age") && type == 3) {
+				users = service.selectUserUnderAge30();
+			}
+		}
+		else {
+			users = service.selectUsers();
+		}
+		
 		model.addAttribute("users", users);
 		
 		return "/user/list";

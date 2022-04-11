@@ -23,6 +23,20 @@ public class UserService {
 	public List<UserVo> selectUsers(){
 		return repo.findAll();
 	}
+	public List<UserVo> selectUsersOrderByName() {
+		return repo.findUserVoByOrderByName();
+	}
+	public List<UserVo> selectUsersOrderByAgeAsc() {
+		return repo.findUserVoByOrderByAgeAsc();
+	}
+	public List<UserVo> selectUsersOrderByAgeDesc() {
+		return repo.findUserVoByOrderByAgeDesc();
+	}
+	
+	public List<UserVo> selectUserUnderAge30(){
+		return repo.selectUserUnderAge30();
+	}
+	
 	public void updateUser(UserVo vo) {
 		repo.save(vo); // Update ~
 	}

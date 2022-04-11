@@ -14,6 +14,8 @@ import kr.co.ch07.vo.UserVo;
 public interface UserRepo extends JpaRepository<UserVo, String> {
 	
 	// JPA 쿼리 메서드 작성
+	// 쿼리 메서드 작성방법
+	// https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation
 	public List<UserVo> findUserVoByOrderByName();
 	public List<UserVo> findUserVoByOrderByAgeAsc();
 	public List<UserVo> findUserVoByOrderByAgeDesc();
@@ -21,5 +23,4 @@ public interface UserRepo extends JpaRepository<UserVo, String> {
 	// JPQL 작성
 	@Query("SELECT a FROM UserVo AS a WHERE age < 30")
 	public List<UserVo> selectUserUnderAge30(); 
-	
 }

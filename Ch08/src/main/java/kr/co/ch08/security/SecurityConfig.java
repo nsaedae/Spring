@@ -1,14 +1,20 @@
 package kr.co.ch08.security;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+import kr.co.ch08.service.UserService;
+
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+	@Autowired
+	private UserService userService;
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// 접근권한 설정
@@ -49,5 +55,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.inMemoryAuthentication().withUser("admin").password("{noop}1234").roles("ADMIN");
 		auth.inMemoryAuthentication().withUser("manager").password("{noop}1234").roles("MANAGER");
 		auth.inMemoryAuthentication().withUser("member").password("{noop}1234").roles("MEMBER");
+		
+		// 로그인 인증 처리 메서드 설정
+		auth.userDetailsService(userService);
+		
 	}
 }

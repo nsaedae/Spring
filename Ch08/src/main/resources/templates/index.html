@@ -7,6 +7,19 @@
 			날짜 : 2022/04/12
 			이름 : 김철학
 			내용 : Ch08.Spring Security
+			
+			라이브러리 추가 후 서버 재시작
+ 			 - spring-boot-starter-security
+ 			 - spring-security-test
+ 			 - thymeleaf-extras-springsecurity4
+ 			 
+ 			콘솔 테스트 사용자 비번 확인
+ 			 - Security 테스트 사용자 아이디는 user
+ 	  		 - Using generated security password: 0d31f8ed-9dce-4dcf-bb5b-312c437a0c66
+
+			기본 로그인 인증화면 확인
+			 - http://localhost:8080/ 접속하면 기본 로그인 화면 뜸 
+			 - 아이디 : user 비밀번호는 메세지에 출력된 값을 입력해서 인증을 거쳐 페이지 접속 확인
 		 -->
 	</head>
 	<body>
@@ -16,6 +29,8 @@
 		<a th:href="@{/guest/success}">guest/success</a><br/>
 		<a th:href="@{/manager/success}">manager/success</a><br/>
 		<a th:href="@{/member/success}">member/success</a><br/>
-
+		
+		<h4>JPA 연동</h4>
+		<a th:href="@{/user/login}">user/login</a><br/>
 	</body>
 </html>

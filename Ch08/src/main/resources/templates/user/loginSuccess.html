@@ -7,7 +7,7 @@
 	<body>
 		<h3>user/loginSuccess</h3>
 		<p>
-			홍길동님 반갑습니다.<br/>
+			<span sec:authentication="name"></span>님 반갑습니다.<br/>
 			<a th:href="@{/user/logout}">로그아웃</a>
 		</p>
 		

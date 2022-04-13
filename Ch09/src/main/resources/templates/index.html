@@ -3,88 +3,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>index</title>
+		<!-- 
+			날짜 : 2022/04/13
+			이름 : 김철학
+			내용 : Ch09.Spring REST API
+			
+			REST API(RESTful)
+			- URI를 설계할 때 기존 GET, POST 이외에 PUT, DELETE를 추가해서 설계해서 요청하는 방식
+			- A태그는 GET만 지원하고, Form은 GET/POST만 지원하기 때문에 REST API는 AJAX로 요청한다.
+			- REST API의 응답결과는 화면(Html)이 아닌 데이터(Json, xml 등)이다. 
+		 -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script>
-			$(function(){
-				// User
-				$('.user_list').click(function(){
-					
-					$.ajax({
-						url: '/user',
-						type: 'GET',
-						dataType: 'json',
-						success: function(data){
-							console.log(data);
-						}
-					});
-					
-				});
-				
-				$('.user_register').click(function(){
-					
-					let jsonData = {
-						"uid": "rest1",
-						"pass": "1234",
-						"name": "홍길동",
-						"hp": "010-1234-1110",
-						"age": 34							
-					};
-					
-					$.ajax({
-						url: '/user',
-						type: 'POST',
-						data: jsonData,
-						dataType: 'json',
-						success: function(data){
-							console.log(data);
-						}
-					});
-					
-					
-				});
-				
-				$('.user_modify').click(function(){
-					let jsonData = {						
-						"name": "홍길동",
-						"hp": "010-1234-1234",
-						"age": 38							
-					};
-					
-					$.ajax({
-						url: '/user/rest1',
-						type: 'PUT',
-						data: jsonData,
-						dataType: 'json',
-						success: function(data){
-							console.log(data);
-						}
-					});
-					
-				});
-				
-				
-				$('.user_delete').click(function(){
-					
-					$.ajax({
-						url: '/user/rest1',
-						type: 'DELETE',
-						dataType: 'json',
-						success: function(data){
-							console.log(data);
-						}
-					});
-				});
-				
-				
-				
-				
-			});
-		
-		
-		</script>
-		
-		
-		
+		<script th:src="@{/js/user.js}"></script>
+		<script th:src="@{/js/member.js}"></script>
+		<script th:src="@{/js/customer.js}"></script>
+		<script th:src="@{/js/student.js}"></script>
+		<script th:src="@{/js/employee.js}"></script>
 	</head>
 	<body>
 		<h3>Spring REST API 실습</h3>

@@ -36,6 +36,7 @@ public class UserController {
 		return service.selectUsers();
 	}
 	
+	@ResponseBody
 	@PutMapping("/user/{uid}")
 	public List<UserVo> modify(@PathVariable("uid") String uid, UserVo vo) {
 		
@@ -45,6 +46,7 @@ public class UserController {
 		return service.selectUsers();
 	}
 	
+	@ResponseBody
 	@DeleteMapping("/user/{uid}")
 	public List<UserVo> delete(@PathVariable("uid") String uid) {
 		service.deleteUser(uid);

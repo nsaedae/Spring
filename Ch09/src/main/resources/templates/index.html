@@ -3,12 +3,121 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>index</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(function(){
+				// User
+				$('.user_list').click(function(){
+					
+					$.ajax({
+						url: '/user',
+						type: 'GET',
+						dataType: 'json',
+						success: function(data){
+							console.log(data);
+						}
+					});
+					
+				});
+				
+				$('.user_register').click(function(){
+					
+					let jsonData = {
+						"uid": "rest1",
+						"pass": "1234",
+						"name": "홍길동",
+						"hp": "010-1234-1110",
+						"age": 34							
+					};
+					
+					$.ajax({
+						url: '/user',
+						type: 'POST',
+						data: jsonData,
+						dataType: 'json',
+						success: function(data){
+							console.log(data);
+						}
+					});
+					
+					
+				});
+				
+				$('.user_modify').click(function(){
+					let jsonData = {						
+						"name": "홍길동",
+						"hp": "010-1234-1234",
+						"age": 38							
+					};
+					
+					$.ajax({
+						url: '/user/rest1',
+						type: 'PUT',
+						data: jsonData,
+						dataType: 'json',
+						success: function(data){
+							console.log(data);
+						}
+					});
+					
+				});
+				
+				
+				$('.user_delete').click(function(){
+					
+					$.ajax({
+						url: '/user/rest1',
+						type: 'DELETE',
+						dataType: 'json',
+						success: function(data){
+							console.log(data);
+						}
+					});
+				});
+				
+				
+				
+				
+			});
+		
+		
+		</script>
+		
+		
+		
 	</head>
 	<body>
 		<h3>Spring REST API 실습</h3>
 		
-		<a th:href="@{/user}">User목록</a>
-	
+		<h4>User</h4>
+		<button class="user_list">User 목록</button>
+		<button class="user_register">User 등록</button>
+		<button class="user_modify">User 수정</button>
+		<button class="user_delete">User 삭제</button>
+		
+		<h4>Member</h4>
+		<button class="member_list">Member 목록</button>
+		<button class="member_register">Member 등록</button>
+		<button class="member_modify">Member 수정</button>
+		<button class="member_delete">Member 삭제</button>
+		
+		<h4>Customer</h4>
+		<button class="customer_list">Customer 목록</button>
+		<button class="customer_register">Customer 등록</button>
+		<button class="customer_modify">Customer 수정</button>
+		<button class="customer_delete">Customer 삭제</button>
+		
+		<h4>Student</h4>
+		<button class="student_list">Student 목록</button>
+		<button class="student_register">Student 등록</button>
+		<button class="student_modify">Student 수정</button>
+		<button class="student_delete">Student 삭제</button>
+		
+		<h4>Employee</h4>
+		<button class="employee_list">Employee 목록</button>
+		<button class="employee_register">Employee 등록</button>
+		<button class="employee_modify">Employee 수정</button>
+		<button class="employee_delete">Employee 삭제</button>
 
 	</body>
 </html>

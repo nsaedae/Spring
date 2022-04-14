@@ -10,16 +10,16 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import kr.co.ch08.persistence.UserRepo;
-import kr.co.ch08.vo.UserVo;
+import kr.co.ch08.persistence.User1Repo;
+import kr.co.ch08.vo.User1Vo;
 
 @Service
-public class UserService implements UserDetailsService {
+public class User1Service implements UserDetailsService {
 
 	@Autowired
-	private UserRepo repo;
+	private User1Repo repo;
 	
-	public void insertUser(UserVo vo) {
+	public void insertUser(User1Vo vo) {
 		
 		// 비밀번호 암호화 처리
 		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
@@ -27,13 +27,13 @@ public class UserService implements UserDetailsService {
 		
 		repo.save(vo);
 	}
-	public UserVo selectUser(String uid) {
+	public User1Vo selectUser(String uid) {
 		return repo.findById(uid).get();
 	}
-	public List<UserVo> selectUsers() {
+	public List<User1Vo> selectUsers() {
 		return repo.findAll();
 	}
-	public void updateUser(UserVo vo) {
+	public void updateUser(User1Vo vo) {
 		repo.save(vo);
 	}
 	public void deleteUser(String uid) {
@@ -43,7 +43,7 @@ public class UserService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
-		UserVo userVo = repo.findById(username).get();
+		User1Vo userVo = repo.findById(username).get();
 		
 		if(userVo == null) {
 			System.out.println("user 없음!");

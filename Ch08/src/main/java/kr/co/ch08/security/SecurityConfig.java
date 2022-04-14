@@ -8,17 +8,17 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import kr.co.ch08.service.UserService;
+import kr.co.ch08.service.User1Service;
 
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
-	private UserService userService;
+	private User1Service userService;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		// 접근권한 설정
+		// 접근 권한 설정
 		http.authorizeRequests().antMatchers("/").permitAll();
 		http.authorizeRequests().antMatchers("/guest/**").permitAll();
 		http.authorizeRequests().antMatchers("/admin/**").hasRole("ADMIN");

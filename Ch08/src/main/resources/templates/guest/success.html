@@ -6,6 +6,10 @@
 	</head>
 	<body>
 		<h1>guest/success</h1>
-		<p>인증성공</p>
+		<p>
+			인증없이 접근 가능<br/>
+			<a th:href="@{/}">index</a><br/>
+			<a th:href="@{/user/logout}">logout</a><br/>
+		</p>
 	</body>
 </html>

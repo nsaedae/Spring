@@ -20,10 +20,20 @@ public class User3Controller {
 	@Autowired
 	private User2Service service;
 	
+	// 처음 sessUser값을 초기화하는 메서드 
+	@ModelAttribute("sessUser")
+	public User2Vo setUser2Vo() {
+		return null;
+	}
 	
 	@GetMapping("/user3/login")
-	public String login() {
-		return "/user3/login";
+	public String login(@ModelAttribute("sessUser") User2Vo sessUser) {
+		
+		if(sessUser == null) {
+			return "/user3/login";
+		}else {
+			return "redirect:/user3/loginSuccess";
+		}
 	}
 	
 	@PostMapping("/user3/login")
@@ -42,7 +52,7 @@ public class User3Controller {
 	
 	@GetMapping("/user3/logout")
 	public String logout(SessionStatus status) {
-		// 세션해제
+		// @SessionAttributes로 설정한 세션 해제
 		status.setComplete();
 		
 		return "redirect:/user3/login?success=103";
@@ -50,18 +60,23 @@ public class User3Controller {
 	
 		
 	@GetMapping("/user3/register")
-	public String register() {
-		return "/user3/register";
+	public String register(@ModelAttribute("sessUser") User2Vo sessUser) {
+		
+		if(sessUser == null) {
+			return "/user3/register";	
+		}else {
+			return "redirect:/user3/loginSuccess";
+		}
 	}
 	
 	@PostMapping("/user3/register")
-	public String register(User2Vo vo) {
+	public String register(@ModelAttribute("sessUser") User2Vo sessUser, User2Vo vo) {
 		service.insertUser(vo);
 		return "redirect:/user3/login";
 	}
 	
 	@GetMapping("/user3/loginSuccess")
-	public String loginSuccess(@ModelAttribute("sessUser")User2Vo sessUser) {
+	public String loginSuccess(@ModelAttribute("sessUser") User2Vo sessUser) {
 		
 		if(sessUser == null) {
 			return "redirect:/user3/login?success=101";

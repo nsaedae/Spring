@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests().antMatchers("/member/**").hasRole("MEMBER");
 		
 		// User2 테이블에 있는 사용자를 위한 기본 인증 설정(특별한 권한 X)
-		http.authorizeRequests().antMatchers("/user/loginSuccess").authenticated();
+		http.authorizeRequests().antMatchers("/user1/loginSuccess").authenticated();
 		
 		// 사이트 위조 요청에 대한 방지 설정
 		http.csrf().disable();
@@ -36,17 +36,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		// 로그인 폼 설정(사용자 정의 폼 사용)
 		http.formLogin()
-		.loginPage("/user/login")
-		.defaultSuccessUrl("/user/loginSuccess")
-		.failureUrl("/user/login?success=100")
+		.loginPage("/user1/login")
+		.defaultSuccessUrl("/user1/loginSuccess")
+		.failureUrl("/user1/login?success=100")
 		.usernameParameter("uid")
 		.passwordParameter("pass");
 		
 		// 로그아웃 설정(사용자 정의)
 		http.logout()
 		.invalidateHttpSession(true)
-		.logoutRequestMatcher(new AntPathRequestMatcher("/user/logout"))
-		.logoutSuccessUrl("/user/login");
+		.logoutRequestMatcher(new AntPathRequestMatcher("/user1/logout"))
+		.logoutSuccessUrl("/user1/login");
 	}
 	
 	@Override

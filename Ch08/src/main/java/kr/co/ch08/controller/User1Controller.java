@@ -14,24 +14,24 @@ public class User1Controller {
 	@Autowired
 	private User1Service service;
 	
-	@GetMapping("/user/login")
+	@GetMapping("/user1/login")
 	public String login() {
-		return "/user/login";
+		return "/user1/login";
 	}
 	
-	@GetMapping("/user/loginSuccess")
+	@GetMapping("/user1/loginSuccess")
 	public String loginSuccess() {
-		return "/user/loginSuccess";
+		return "/user1/loginSuccess";
 	}
 	
-	@GetMapping("/user/register")
+	@GetMapping("/user1/register")
 	public String register() {
-		return "/user/register";
+		return "/user1/register";
 	}
 	
-	@PostMapping("/user/register")
+	@PostMapping("/user1/register")
 	public String register(User1Vo vo) {
 		service.insertUser(vo);
-		return "redirect:/user/login";
+		return "redirect:/user1/login";
 	}
 }

@@ -1,8 +1,13 @@
 package kr.co.sboard1.vo;
 
+import java.sql.Timestamp;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -25,7 +30,9 @@ public class UserVo {
 	private String addr1;
 	private String addr2;
 	private String regip;
-	private String rdate;
 	
+	@Column(updatable=false)
+	@CreationTimestamp
+	private Timestamp rdate;
 	
 }

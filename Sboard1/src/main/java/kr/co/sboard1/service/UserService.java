@@ -19,14 +19,19 @@ public class UserService {
 	@Autowired
 	private UserRepo repo;
 	
-	public void insertUser(UserVo vo) {}
+	public void insertUser(UserVo vo) {
+		dao.insertUser(vo);
+	}
 	
 	public TermsVo selectTerms() {
 		return dao.selectTerms();
 	}
 	
-	public UserVo selectUser(String uid) {
-		return null;
+	public int countUserUid(String uid) {
+		return repo.countUserVoByUid(uid);
+	}
+	public UserVo selectUser(UserVo vo) {
+		return dao.selectUser(vo);
 	}
 	public List<UserVo> selectUsers(){
 		return null;

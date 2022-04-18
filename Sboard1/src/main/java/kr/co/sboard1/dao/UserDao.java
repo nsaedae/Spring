@@ -14,7 +14,7 @@ public interface UserDao {
 
 	public void insertUser(UserVo vo);
 	public TermsVo selectTerms();
-	public UserVo selectUser(String uid);
+	public UserVo selectUser(UserVo vo);
 	public List<UserVo> selectUsers();
 	public void updateUser(UserVo vo);
 	public void deleteUser(String uid);

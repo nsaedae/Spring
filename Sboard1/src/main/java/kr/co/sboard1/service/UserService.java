@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import kr.co.sboard1.dao.UserDao;
 import kr.co.sboard1.persistence.UserRepo;
+import kr.co.sboard1.vo.TermsVo;
 import kr.co.sboard1.vo.UserVo;
 
 @Service
@@ -19,6 +20,11 @@ public class UserService {
 	private UserRepo repo;
 	
 	public void insertUser(UserVo vo) {}
+	
+	public TermsVo selectTerms() {
+		return dao.selectTerms();
+	}
+	
 	public UserVo selectUser(String uid) {
 		return null;
 	}

@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import kr.co.sboard1.vo.TermsVo;
 import kr.co.sboard1.vo.UserVo;
 
 @Mapper
@@ -12,6 +13,7 @@ import kr.co.sboard1.vo.UserVo;
 public interface UserDao {
 
 	public void insertUser(UserVo vo);
+	public TermsVo selectTerms();
 	public UserVo selectUser(String uid);
 	public List<UserVo> selectUsers();
 	public void updateUser(UserVo vo);

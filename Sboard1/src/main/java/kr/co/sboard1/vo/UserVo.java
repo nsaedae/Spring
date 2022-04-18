@@ -27,4 +27,5 @@ public class UserVo {
 	private String regip;
 	private String rdate;
 	
+	
 }

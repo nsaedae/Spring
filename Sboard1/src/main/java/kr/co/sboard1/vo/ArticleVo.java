@@ -1,10 +1,13 @@
 package kr.co.sboard1.vo;
 
-import javax.annotation.Generated;
+import java.sql.Timestamp;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -26,6 +29,9 @@ public class ArticleVo {
 	private int hit;
 	private String uid;
 	private String regip;
-	private String rdate;
+	
+	@Column(updatable=false)
+	@CreationTimestamp
+	private Timestamp rdate;
 	
 }

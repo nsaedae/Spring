@@ -10,7 +10,8 @@
         <section id="board" class="write">
             <h3>글쓰기</h3>
             <article>
-                <form action="#">
+                <form th:action="@{/article/write}" method="post">
+                	<input type="hidden" name="uid" th:value="${sessUser.uid}"/>
                     <table>
                         <tr>
                             <td>제목</td>
@@ -24,11 +25,11 @@
                         </tr>
                         <tr>
                             <td>첨부</td>
-                            <td><input type="file" name="file"/></td>
+                            <td><input type="file" name="fname"/></td>
                         </tr>
                     </table>
                     <div>
-                        <a href="./list.html" class="btnCancel">취소</a>
+                        <a th:href="@{/article/list}" class="btnCancel">취소</a>
                         <input type="submit"  class="btnWrite" value="작성완료">
                     </div>
                 </form>

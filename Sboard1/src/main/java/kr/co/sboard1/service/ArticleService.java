@@ -18,7 +18,15 @@ public class ArticleService {
 	@Autowired
 	private ArticleRepo repo;
 	
-	public void insertArticle(ArticleVo vo) {}
+	public void insertArticle(ArticleVo vo) {
+		
+		// JPA
+		//repo.save(vo);
+		
+		// MyBatis
+		dao.insertArticle(vo);
+	}
+	
 	public ArticleVo selectArticle(int no) {
 		return null;
 	}

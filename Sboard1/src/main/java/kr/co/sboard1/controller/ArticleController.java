@@ -100,5 +100,4 @@ public class ArticleController {
 		
 		return "/article/modify";
 	}
-	
 }

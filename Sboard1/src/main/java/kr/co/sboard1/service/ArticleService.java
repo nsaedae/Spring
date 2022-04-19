@@ -37,11 +37,11 @@ public class ArticleService {
 	
 	public void insertFile(FileVo vo) {
 		// JPA
-		fileRepo.save(vo);
+		//fileRepo.save(vo);
 		
 		// MyBatis
+		dao.insertFile(vo);
 	}
-	
 	
 	public ArticleVo selectArticle(int no) {
 		return null;

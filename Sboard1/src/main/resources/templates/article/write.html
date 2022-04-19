@@ -10,7 +10,7 @@
         <section id="board" class="write">
             <h3>글쓰기</h3>
             <article>
-                <form th:action="@{/article/write}" method="post">
+                <form th:action="@{/article/write}" method="post" enctype="multipart/form-data">
                 	<input type="hidden" name="uid" th:value="${sessUser.uid}"/>
                     <table>
                         <tr>

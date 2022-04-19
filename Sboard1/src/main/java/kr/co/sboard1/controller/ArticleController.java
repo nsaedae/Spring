@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import kr.co.sboard1.service.ArticleService;
 import kr.co.sboard1.vo.ArticleVo;
+import kr.co.sboard1.vo.FileVo;
 import kr.co.sboard1.vo.UserVo;
 
 
@@ -59,8 +60,25 @@ public class ArticleController {
 		String regip = req.getRemoteAddr();
 		vo.setRegip(regip);
 		
-		service.insertArticle(vo);
-				
+		if(vo.getFname().isEmpty()) {
+			// 파일 첨부 안했을 때
+			vo.setFile(0);
+			service.insertArticle(vo);
+		}else {
+			// 파일 첨부 했을 때
+			
+			// 글 등록
+			vo.setFile(1);
+			int no = service.insertArticle(vo);
+			
+			// 파일 업로드
+			FileVo fvo = service.fileUpload(vo.getFname());
+			
+			// 파일 등록
+			fvo.setParent(no);
+			service.insertFile(fvo);
+		}
+		
 		return "redirect:/article/list";
 	}
 	

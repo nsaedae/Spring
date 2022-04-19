@@ -11,7 +11,7 @@ import kr.co.sboard1.vo.ArticleVo;
 @Repository
 public interface ArticleDao {
 
-	public void insertArticle(ArticleVo vo);
+	public int insertArticle(ArticleVo vo);
 	public ArticleVo selectArticle(int no);
 	public List<ArticleVo> selectArticles();
 	public void updateArticle(ArticleVo vo);

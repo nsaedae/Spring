@@ -46,13 +46,29 @@ public class ArticleService {
 	public ArticleVo selectArticle(int no) {
 		return null;
 	}
-	public List<ArticleVo> selectArticles(){
-		return null;
+	public List<ArticleVo> selectArticles(int start){
+		
+		// JPA
+		
+		// MyBatis
+		List<ArticleVo> articles = dao.selectArticles(start);
+		
+		return articles;
 	}
+	
+	public int selectCountTotal() {
+		// JPA
+		
+		// MyBatis
+		int total = dao.selectCountTotal();
+		
+		return total;
+	}
+	
 	public void updateArticle(ArticleVo vo) {}
 	public void deleteArticle(int no) {}
 
-	@Value("${file.upload-dir}")
+	@Value("${spring.servlet.multipart.location}")
 	private String uploadDir;
 	
 	public FileVo fileUpload(MultipartFile fname) {
@@ -83,6 +99,34 @@ public class ArticleService {
 	
 	public void fileDownload() {
 		
+	}
+	
+	public int getLastPageNum(int total){
+		
+		int lastPageNum = 0;
+		
+		if(total % 10 == 0) {
+			lastPageNum = total / 10;
+		}else {
+			lastPageNum = total / 10 + 1;
+		}
+		
+		return lastPageNum;
+	}
+	
+	public int getCurrentPage(String pg) {
+		
+		int currentPage = 1;
+		
+		if(pg != null) {
+			currentPage = Integer.parseInt(pg);
+		}
+		
+		return currentPage;
+	}
+	
+	public int getLimitStart(int currentPage) {
+		return (currentPage - 1) * 10;
 	}
 	
 	

@@ -1,8 +1,19 @@
 package kr.co.sboard1;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.catalina.core.ApplicationContext;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.util.StringUtils;
 
 import kr.co.sboard1.dao.ArticleDao;
 import kr.co.sboard1.persistence.ArticleRepo;
@@ -21,6 +32,9 @@ class Sboard1ApplicationTests {
 	@Autowired
 	private ArticleDao articleDao;
 	
+
+	@Value("${spring.servlet.multipart.location}")
+	private String uploadDir;
 	
 	void contextLoads() {
 		System.out.println("Hello JUnit!");
@@ -31,7 +45,7 @@ class Sboard1ApplicationTests {
 		System.out.println("result : "+result);
 	}
 	
-	@Test
+	
 	public void testArticleInsert() {
 		
 		ArticleVo vo = new ArticleVo();
@@ -53,5 +67,26 @@ class Sboard1ApplicationTests {
 	}
 	
 	
+	//private ServletContext ctx;
+	
+	@Autowired
+	private ApplicationContext ctx;
+
+	//
+
+
+	@Test
+	public void testFileUploadPath() throws MalformedURLException {
+		
+		//BufferedReader readerState = new BufferedReader(new InputStreamReader(stateResource.getInputStream()));
+		
+		String path1 = ctx.getResource("classpath:/file").getPath();
+		String path2 = new File(uploadDir).getAbsolutePath();
+		
+		
+		System.out.println("uploadDir : "+uploadDir);
+		System.out.println("path1 : "+path1);
+		System.out.println("path2 : "+path2);
+	}
 	
 }

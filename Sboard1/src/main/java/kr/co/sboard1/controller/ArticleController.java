@@ -1,10 +1,13 @@
 package kr.co.sboard1.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,15 +34,27 @@ public class ArticleController {
 	}
 
 	@GetMapping("/article/list")
-	public String list(@ModelAttribute("sessUser") UserVo sessUser) {
+	public String list(@ModelAttribute("sessUser") UserVo sessUser, Model model, String pg) {
 		
 		// 로그인 체크
 		if(sessUser == null) {
 			return "redirect:/user/login?success=102";	
 		}
 		
+		int currentPage = service.getCurrentPage(pg); 
+		int total = service.selectCountTotal();
+		int lastPageNum = service.getLastPageNum(total);
+		int start = service.getLimitStart(currentPage);
+		
+		List<ArticleVo> articles = service.selectArticles(start);
+		
+		model.addAttribute("articles", articles);
+		model.addAttribute("lastPageNum", lastPageNum);
+		model.addAttribute("currentPage", currentPage);
+		
 		return "/article/list";
 	}
+	
 	@GetMapping("/article/write")
 	public String write(@ModelAttribute("sessUser") UserVo sessUser) {
 		// 로그인 체크

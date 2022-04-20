@@ -45,12 +45,16 @@ public class ArticleController {
 		int total = service.selectCountTotal();
 		int lastPageNum = service.getLastPageNum(total);
 		int start = service.getLimitStart(currentPage);
+		int pageStartNum = service.getPageStartNum(total, start);
+		int groups[] = service.getPageGroup(currentPage, lastPageNum);
 		
 		List<ArticleVo> articles = service.selectArticles(start);
 		
 		model.addAttribute("articles", articles);
 		model.addAttribute("lastPageNum", lastPageNum);
 		model.addAttribute("currentPage", currentPage);
+		model.addAttribute("pageStartNum", pageStartNum);
+		model.addAttribute("groups", groups);
 		
 		return "/article/list";
 	}

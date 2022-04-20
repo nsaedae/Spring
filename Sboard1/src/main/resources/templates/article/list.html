@@ -22,8 +22,8 @@
                         <th>날짜</th>
                         <th>조회</th>
                     </tr>
-                    <tr th:each="article:${articles}">
-                        <td>[[${article.no}]]</td>
+                    <tr th:each="article,i:${articles}">
+                        <td>[[${pageStartNum - i.index}]]</td>
                         <td><a th:href="@{#}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
                         <td>[[${article.nick}]]</td>
                         <td>[[${article.rdate}]]</td>
@@ -35,13 +35,17 @@
             <!-- 페이지 네비게이션 -->
             <div class="paging">
             
-                <a href="#" class="prev">이전</a>
+            	<th:block th:if="${groups[0] > 1}">
+                	<a th:href="@{/article/list(pg=${groups[0] - 1})}" class="prev">이전</a>
+                </th:block>
                 
-                <th:block th:each="num:${#numbers.sequence(1, lastPageNum)}">
+                <th:block th:each="num:${#numbers.sequence(groups[0], groups[1])}">
                 	<a th:href="@{/article/list(pg=${num})}" th:class="${num==currentPage?'num current':'num'}">[[${num}]]</a>       
                 </th:block>
                 
-                <a href="#" class="next">다음</a>
+                <th:block th:if="${groups[1] < lastPageNum}">
+                	<a th:href="@{/article/list(pg=${groups[1] + 1})}" class="next">다음</a>
+                </th:block>
                 
             </div>
 

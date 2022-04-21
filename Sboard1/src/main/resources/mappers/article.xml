@@ -5,6 +5,7 @@
 		INSERT INTO `Board_article` SET 
 			`title`=#{title},
 			`content`=#{content},
+			`file`=#{file},
 			`uid`=#{uid},
 			`regip`=#{regip},
 			`rdate`=NOW();			
@@ -58,6 +59,11 @@
 	<select id="selectCountTotal" resultType="int">
 		SELECT COUNT(`no`) FROM `Board_article` WHERE `parent`=0;
 	</select>
+	
+	<select id="selectFile" resultType="kr.co.sboard1.vo.FileVo">
+		SELECT * FROM `Board_file` WHERE `fid`=#{fid};
+	</select>
+	
 	
 	
 	<update id="updateArticle"></update>

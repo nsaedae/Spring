@@ -1,8 +1,10 @@
 package kr.co.sboard1.controller;
 
+import java.net.URLEncoder;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -85,12 +87,9 @@ public class ArticleController {
 			service.insertArticle(vo);
 		}else {
 			// 파일 첨부 했을 때
-			
 			// 글 등록
 			vo.setFile(1);
 			int no = service.insertArticle(vo);
-			
-			System.out.println("글번호 : "+no);
 			
 			// 파일 업로드
 			FileVo fvo = service.fileUpload(vo.getFname());
@@ -124,5 +123,17 @@ public class ArticleController {
 		}
 		
 		return "/article/modify";
+	}
+	
+	
+	@GetMapping("/article/filedownload")
+	public void filedownload(int fid, HttpServletResponse resp) {
+		// 파일 다운로드 카운트 +1
+		
+		// 파일 다운로드 정보조회
+		FileVo fvo = service.selectFile(fid);
+		
+		// 파일 다운로드
+		service.fileDownload(resp, fvo);
 	}
 }

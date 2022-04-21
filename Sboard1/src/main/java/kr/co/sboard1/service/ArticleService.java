@@ -47,6 +47,14 @@ public class ArticleService {
 		dao.insertFile(vo);
 	}
 	
+	public int insertComment(ArticleVo vo) {
+		return dao.insertComment(vo);
+	}
+	
+	public List<ArticleVo> selectComments(int no){
+		return dao.selectComments(no);
+	}
+	
 	public ArticleVo selectArticle(int no) {
 		
 		// JPA

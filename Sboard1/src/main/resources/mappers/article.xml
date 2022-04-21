@@ -18,6 +18,19 @@
 			`rdate`=NOW();
 	</insert>
 	
+	<insert id="insertComment">
+		INSERT INTO `Board_article` SET
+			`parent`=#{parent},
+			`content`=#{content},
+			`uid`=#{uid},
+			`regip`=#{regip},
+			`rdate`=NOW();
+	</insert>
+	
+	<select id="selectComments" resultType="kr.co.sboard1.vo.ArticleVo">
+		SELECT * FROM `Board_article` WHERE `parent`=#{no} ORDER BY `no`;	
+	</select>
+	
 	<!-- SELECT JOIN 결과를 출력을 위한 형식을 정하는 태그 -->
 	<resultMap type="kr.co.sboard1.vo.ArticleVo" id="selectArticleResultMap">
 		<id     column="no"      property="no"/>

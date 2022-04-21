@@ -4,6 +4,48 @@
     <meta charset="UTF-8">
     <title>글보기</title>
     <link rel="stylesheet" th:href="@{/css/style.css}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script th:inline="javascript">
+		$(function(){
+			// 댓글 목록 불러오기
+			let no = [[${article.no}]]; 
+				
+			$.ajax({
+				url:'/Sboard1/article/comment/'+no,
+				type:'GET',
+				dataType:'json',
+				success:function(data){
+					console.log(data);
+				}
+			});
+			
+			// 댓글등록버튼
+			$('input[type=submit]').click(function(){
+				
+				let parent  = $('.commentForm input[name=parent]').val();
+				let uid     = $('.commentForm input[name=uid]').val();
+				let content = $('.commentForm textarea[name=content]').val();
+				
+				let jsonData = {
+					"parent":parent,
+					"uid":uid,
+					"content":content						
+				};
+				
+				$.ajax({
+					url:'/Sboard1/article/comment',
+					type:'POST',
+					data:jsonData,
+					dataType:'json',
+					success:function(data){
+						alert(data);
+					}
+				});
+				
+				return false;
+			});
+		});	
+	</script>
 </head>
 <body>
     <div id="wrapper">
@@ -56,8 +98,10 @@
             <!-- 댓글입력폼 -->
             <section class="commentForm">
                 <h3>댓글쓰기</h3>
-                <form action="#">
-                    <textarea name="comment"></textarea>
+                <form th:action="@{/article/comment}" method="post">
+                	<input type="hidden" name="parent" th:value="${article.no}"/>
+                	<input type="hidden" name="uid" th:value="${sessUser.uid}"/>
+                    <textarea name="content"></textarea>
                     <div>
                         <a href="#" class="btnCancel">취소</a>
                         <input type="submit" class="btnWrite" value="작성완료"/>
@@ -69,3 +113,5 @@
     </div>    
 </body>
 </html>
+
+

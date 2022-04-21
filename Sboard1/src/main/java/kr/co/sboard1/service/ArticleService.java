@@ -29,9 +29,9 @@ public class ArticleService {
 	
 	public int insertArticle(ArticleVo vo) {
 		// JPA
-		repo.save(vo);
+		//repo.save(vo);
 		// MyBatis
-		//dao.insertArticle(vo);
+		dao.insertArticle(vo);
 		return vo.getNo();
 	}
 	

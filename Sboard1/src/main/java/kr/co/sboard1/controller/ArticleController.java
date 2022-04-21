@@ -90,6 +90,8 @@ public class ArticleController {
 			vo.setFile(1);
 			int no = service.insertArticle(vo);
 			
+			System.out.println("글번호 : "+no);
+			
 			// 파일 업로드
 			FileVo fvo = service.fileUpload(vo.getFname());
 			

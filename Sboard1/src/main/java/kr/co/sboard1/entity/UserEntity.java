@@ -1,4 +1,4 @@
-package kr.co.sboard1.vo;
+package kr.co.sboard1.entity;
 
 import java.sql.Timestamp;
 
@@ -14,8 +14,11 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class UserVo {
+@Entity
+@Table(name = "Board_user")
+public class UserEntity {
 
+	@Id
 	private String uid;
 	private String pass;
 	private String name;
@@ -27,6 +30,9 @@ public class UserVo {
 	private String addr1;
 	private String addr2;
 	private String regip;
+	
+	@Column(updatable=false)
+	@CreationTimestamp
 	private Timestamp rdate;
 	
 }

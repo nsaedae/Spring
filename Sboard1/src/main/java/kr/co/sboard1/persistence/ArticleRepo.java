@@ -9,4 +9,8 @@ import kr.co.sboard1.vo.UserVo;
 @Repository
 public interface ArticleRepo extends JpaRepository<ArticleVo, Integer>{
 	
+	
+	
+	
+	
 }

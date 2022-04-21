@@ -24,7 +24,7 @@
                     </tr>
                     <tr th:each="article,i:${articles}">
                         <td>[[${pageStartNum - i.index}]]</td>
-                        <td><a th:href="@{#}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
+                        <td><a th:href="@{/article/view(no=${article.no})}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
                         <td>[[${article.nick}]]</td>
                         <td>[[${article.rdate}]]</td>
                         <td>[[${article.hit}]]</td>

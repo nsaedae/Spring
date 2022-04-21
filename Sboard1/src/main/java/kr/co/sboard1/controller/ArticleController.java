@@ -102,11 +102,15 @@ public class ArticleController {
 	}
 	
 	@GetMapping("/article/view")
-	public String view(@ModelAttribute("sessUser") UserVo sessUser) {
+	public String view(@ModelAttribute("sessUser") UserVo sessUser, int no, Model model) {
 		// 로그인 체크
 		if(sessUser == null) {
 			return "redirect:/user/login?success=102";	
 		}
+		
+		ArticleVo article = service.selectArticle(no);
+		
+		model.addAttribute("article", article);
 		
 		return "/article/view";
 	}

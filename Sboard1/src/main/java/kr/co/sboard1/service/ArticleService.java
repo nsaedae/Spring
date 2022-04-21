@@ -44,11 +44,19 @@ public class ArticleService {
 	}
 	
 	public ArticleVo selectArticle(int no) {
-		return null;
+		
+		// JPA
+		
+		// MyBatis
+		ArticleVo article = dao.selectArticle(no);
+		
+		return article;
 	}
+	
 	public List<ArticleVo> selectArticles(int start){
 		
 		// JPA
+		
 		
 		// MyBatis
 		List<ArticleVo> articles = dao.selectArticles(start);

@@ -7,6 +7,8 @@
 </head>
 <body>
     <div id="wrapper">
+    	<th:block th:include="/_header.html"/>
+    
         <section id="user" class="login">
             <form th:action="@{/user/login}" method="post">
                 <table border="0">
@@ -31,6 +33,8 @@
             </div>
 
         </section>
+    
+    	<th:block th:include="/_footer.html"/>
     </div>    
 </body>
 </html>

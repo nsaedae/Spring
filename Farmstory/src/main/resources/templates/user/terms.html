@@ -7,6 +7,8 @@
 </head>
 <body>
     <div id="wrapper">
+    	<th:block th:include="/_header.html"/>
+    
         <section id="user" class="terms">
             <table>
                 <caption>사이트 이용약관</caption>
@@ -35,6 +37,8 @@
                 <a th:href="@{/user/register}">다음</a>
             </div>
         </section>
+    
+    	<th:block th:include="/_footer.html"/>
     </div>
     
 </body>

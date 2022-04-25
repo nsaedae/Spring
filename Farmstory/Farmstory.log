@@ -3920,3 +3920,6 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2022-04-25 11:02:26.285  INFO 7176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
 2022-04-25 11:02:26.288  INFO 7176 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.839 seconds (JVM running for 3949.677)
 2022-04-25 11:02:26.289  INFO 7176 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-25 11:03:07.566  INFO 7176 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 11:03:07.566  INFO 7176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-25 11:03:07.567  INFO 7176 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

@@ -11,10 +11,10 @@
     
     <ul class="gnb">
         <li><a th:href="@{/introduction/hello}">팜스토리소개</a></li>
-        <li><a th:href="@{#}"><img th:src="@{/img/head_menu_badge.png}" alt="30%"/>장보기</a></li>
-        <li><a th:href="@{#}">농작물이야기</a></li>
-        <li><a th:href="@{#}">이벤트</a></li>
-        <li><a th:href="@{#}">커뮤니티</a></li>
+        <li><a th:href="@{/board/list(cate=market)}"><img th:src="@{/img/head_menu_badge.png}" alt="30%"/>장보기</a></li>
+        <li><a th:href="@{/board/list(cate=croptalk)}">농작물이야기</a></li>
+        <li><a th:href="@{/board/list(cate=event)}">이벤트</a></li>
+        <li><a th:href="@{/board/list(cate=community)}">커뮤니티</a></li>
     </ul>
 </header>
 </html>        

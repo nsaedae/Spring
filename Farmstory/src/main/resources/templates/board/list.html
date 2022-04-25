@@ -8,7 +8,7 @@
 <body>
     <div id="wrapper">
     	<th:block th:include="/_header.html"/>
-    
+    	<th:block th:include="/board/inc/_croptalk.html"/>
         <section id="board" class="list">
             <h3>글목록</h3>
             <article>
@@ -55,7 +55,10 @@
             <a th:href="@{#}" class="btnWrite">글쓰기</a>
 
         </section>
-    
+    	<!-- 내용 끝 -->
+		</article>
+		</section>
+        </div>
     	<th:block th:include="/_footer.html"/>
     </div>    
 </body>

@@ -4,7 +4,7 @@
 	<insert id="insertUser">
 		INSERT INTO `Board_user` SET
 			`uid`=#{uid},
-			`pass`=PASSWORD(#{pass1}),
+			`pass`=PASSWORD(#{pass}),
 			`name`=#{name},
 			`nick`=#{nick},
 			`email`=#{email},

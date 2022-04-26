@@ -4,9 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import kr.co.farmstory.service.UserService;
 import kr.co.farmstory.vo.TermsVo;
+import kr.co.farmstory.vo.UserVo;
 
 @Controller
 public class UserController {
@@ -31,6 +33,12 @@ public class UserController {
 	@GetMapping("/user/register")
 	public String register() {
 		return "/user/register";
+	}
+	
+	@PostMapping("/user/register")
+	public String register(UserVo vo) {
+		service.insertUser(vo);
+		return "redirect:/user/login";
 	}
 	
 }

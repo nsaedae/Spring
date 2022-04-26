@@ -27,6 +27,11 @@ public class UserService {
 	public List<UserVo> selectUsers() {
 		return dao.selectUsers();				
 	}
+	
+	public int selectCountUserUid(String uid) {
+		return dao.selectCountUserUid(uid);
+	}
+	
 	public void updateUser(UserVo vo) {
 		dao.updateUser(vo);
 	}

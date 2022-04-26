@@ -16,6 +16,7 @@ public interface UserDao {
 	public TermsVo selectTerms();
 	public UserVo selectUser(String uid);
 	public List<UserVo> selectUsers();
+	public int selectCountUserUid(String uid);
 	public void updateUser(UserVo vo);
 	public void deleteUser(String uid);
 	

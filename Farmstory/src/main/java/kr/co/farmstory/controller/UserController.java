@@ -9,11 +9,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import kr.co.farmstory.service.UserService;
 import kr.co.farmstory.vo.TermsVo;
 import kr.co.farmstory.vo.UserVo;
 
+@SessionAttributes("sessUser")
 @Controller
 public class UserController {
 
@@ -23,6 +26,27 @@ public class UserController {
 	@GetMapping("/user/login")
 	public String login() {
 		return "/user/login";
+	}
+	
+	@GetMapping("/user/logout")
+	public String logout(SessionStatus status) {
+		status.setComplete();
+		return "redirect:/user/login?success=103";
+	}
+	
+	@PostMapping("/user/login")
+	public String login(UserVo vo, Model model) {
+		
+		UserVo user = service.selectUser(vo);
+		
+		if(user == null) {
+			// 로그인 실패
+			return "redirect:/user/login?success=100";	
+		}else {
+			// 로그인 성공
+			model.addAttribute("sessUser", user);
+			return "redirect:/index";
+		}
 	}
 	
 	@GetMapping("/user/terms")

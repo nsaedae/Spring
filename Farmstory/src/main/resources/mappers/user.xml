@@ -22,6 +22,7 @@
 		SELECT * FROM `Board_user` WHERE `uid`=#{uid} AND `pass`=PASSWORD(#{pass});	
 	</select>
 	<select id="selectUsers"></select>
+	
 	<select id="selectCountUserUid" resultType="int">
 		SELECT COUNT(`uid`) FROM `Board_user` WHERE `uid`=#{uid};	
 	</select>

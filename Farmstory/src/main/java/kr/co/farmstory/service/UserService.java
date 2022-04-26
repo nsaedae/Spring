@@ -21,8 +21,8 @@ public class UserService {
 	public TermsVo selectTerms() {
 		return dao.selectTerms();
 	}
-	public UserVo selectUser(String uid) {
-		return dao.selectUser(uid);
+	public UserVo selectUser(UserVo vo) {
+		return dao.selectUser(vo);
 	}
 	public List<UserVo> selectUsers() {
 		return dao.selectUsers();				

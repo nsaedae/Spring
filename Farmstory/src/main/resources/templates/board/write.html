@@ -8,11 +8,17 @@
 <body>
     <div id="wrapper">
     	<th:block th:include="/_header.html"/>
-    
+    	<th:block th:include="/board/inc/__${cate}__.html"/>
         <section id="board" class="write">
             <h3>글쓰기</h3>
             <article>
-                <form th:action="@{/article/write}" method="post">
+                <form th:action="@{/board/write}" method="post">
+                	<input type="text" name="cate" th:value="${cate}"/>
+                	<input type="text" name="type" th:value="${type}"/>
+                	
+                	<!-- BoardController 상단에 @SessionAttributes("sessUser") 선언 해야됨 -->
+                	<input type="text" name="uid" th:value="${sessUser.uid}"/>
+                	
                     <table>
                         <tr>
                             <td>제목</td>
@@ -36,7 +42,10 @@
                 </form>
             </article>
         </section>
-    
+        <!-- 내용 끝 -->
+		</article>
+		</section>
+        </div>    
     	<th:block th:include="/_footer.html"/>
     </div>
 </body>

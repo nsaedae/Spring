@@ -32,13 +32,24 @@ public class BoardController {
 	
 	
 	@GetMapping("/board/list")
-	public String list(Model model, String cate, String type) {
+	public String list(Model model, String cate, String type, String pg) {
 		
-		List<ArticleVo> articles = service.selectArticles(type);
+		int currentPage = service.getCurrentPage(pg); 
+		int total = service.selectCountTotal(type); // <---- 게시판 종류(type)별로 전체 갯수를 구한다. 
+		int lastPageNum = service.getLastPageNum(total);
+		int start = service.getLimitStart(currentPage);
+		int pageStartNum = service.getPageStartNum(total, start);
+		int groups[] = service.getPageGroup(currentPage, lastPageNum);
+		
+		List<ArticleVo> articles = service.selectArticles(type, start);
 		
 		model.addAttribute("cate", cate);
 		model.addAttribute("type", type);
 		model.addAttribute("articles", articles);
+		model.addAttribute("lastPageNum", lastPageNum);
+		model.addAttribute("currentPage", currentPage);
+		model.addAttribute("pageStartNum", pageStartNum);
+		model.addAttribute("groups", groups);
 		
 		return "/board/list";
 	}

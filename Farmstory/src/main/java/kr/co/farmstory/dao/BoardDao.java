@@ -12,8 +12,9 @@ import kr.co.farmstory.vo.FileVo;
 public interface BoardDao {
 	public int insertArticle(ArticleVo vo);
 	public void insertFile(FileVo vo);
+	public int selectCountTotal(String type);
 	public ArticleVo selectArticle(int no);
-	public List<ArticleVo> selectArticles(String type);
+	public List<ArticleVo> selectArticles(String type, int start);
 	public void updateArticle(ArticleVo vo);
 	public void deleteArticle(int no);
 }

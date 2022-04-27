@@ -21,30 +21,34 @@
                         <th>조회</th>
                     </tr>
                     <tr th:each="article,i:${articles}">
-                        <td>[[${article.no}]]</td>
+                        <td>[[${pageStartNum - i.index}]]</td>
                         <td><a th:href="@{/board/view(no=${article.no})}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
                         <td>[[${article.nick}]]</td>
-                        <td>[[${article.rdate}]]</td>
+                        <td>[[${article.rdate.substring(2, 10)}]]</td>
                         <td>[[${article.hit}]]</td>
                     </tr>
                 </table>
             </article>
 
             <!-- 페이지 네비게이션 -->
+            <!-- 
+            	데이터 채우기
+            	INSERT INTO `Board_article` (`type`, `title`, `content`, `uid`, `regip`, `rdate`)
+            	SELECT `type`, `title`, `content`, `uid`, `regip`, `rdate`
+            	FROM `Board_article` WHERE `parent`=0 AND `type`='story';            
+            -->            
             <div class="paging">
-            	<!-- 
             	<th:block th:if="${groups[0] > 1}">
-                	<a th:href="@{/article/list(pg=${groups[0] - 1})}" class="prev">이전</a>
+                	<a th:href="@{/board/list(cate=${cate}, type=${type}, pg=${groups[0] - 1})}" class="prev">이전</a>
                 </th:block>
                 
                 <th:block th:each="num:${#numbers.sequence(groups[0], groups[1])}">
-                	<a th:href="@{/article/list(pg=${num})}" th:class="${num==currentPage?'num current':'num'}">[[${num}]]</a>       
+                	<a th:href="@{/board/list(cate=${cate}, type=${type}, pg=${num})}" th:class="${num==currentPage?'num current':'num'}">[[${num}]]</a>       
                 </th:block>
                 
                 <th:block th:if="${groups[1] < lastPageNum}">
-                	<a th:href="@{/article/list(pg=${groups[1] + 1})}" class="next">다음</a>
+                	<a th:href="@{/board/list(cate=${cate}, type=${type}, pg=${groups[1] + 1})}" class="next">다음</a>
                 </th:block>
-                 -->
             </div>
 
             <!-- 글쓰기 버튼 -->

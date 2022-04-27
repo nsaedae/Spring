@@ -12,12 +12,19 @@
         <section id="board" class="write">
             <h3>글쓰기</h3>
             <article>
-                <form th:action="@{/board/write}" method="post">
-                	<input type="text" name="cate" th:value="${cate}"/>
-                	<input type="text" name="type" th:value="${type}"/>
+            	<!-- 
+            		파일(첨부) 업로드 기능구현
+            		 1. application.properties 파일 업로드 설정
+            		 2. pom.xml - commons-io 라이브러리 추가
+            		 3. form 태그 enctype="multipart/form-data" 속성 추가
+            		 4. src/main/resources/static/file 디렉터리 생성
+            	-->
+                <form th:action="@{/board/write}" method="post" enctype="multipart/form-data">
+                	<input type="hidden" name="cate" th:value="${cate}"/>
+                	<input type="hidden" name="type" th:value="${type}"/>
                 	
                 	<!-- BoardController 상단에 @SessionAttributes("sessUser") 선언 해야됨 -->
-                	<input type="text" name="uid" th:value="${sessUser.uid}"/>
+                	<input type="hidden" name="uid" th:value="${sessUser.uid}"/>
                 	
                     <table>
                         <tr>

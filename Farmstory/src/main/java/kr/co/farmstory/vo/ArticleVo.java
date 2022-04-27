@@ -1,5 +1,7 @@
 package kr.co.farmstory.vo;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,7 +24,7 @@ public class ArticleVo {
 	
 	// 추가필드
 	private String cate;
-	private String fname;
+	private MultipartFile fname;
 	
 
 }

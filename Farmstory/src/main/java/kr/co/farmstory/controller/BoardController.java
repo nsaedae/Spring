@@ -99,7 +99,16 @@ public class BoardController {
 	
 	
 	@GetMapping("/board/view")
-	public String view() {
+	public String view(@ModelAttribute("sessUser") UserVo sessUser, Model model, String cate, String type, int no) {
+		
+		
+		ArticleVo article = service.selectArticle(no);
+		
+		
+		model.addAttribute("cate", cate);
+		model.addAttribute("type", type);
+		model.addAttribute("article", article);
+		
 		return "/board/view";
 	}
 	

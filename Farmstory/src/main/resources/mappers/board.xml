@@ -23,6 +23,10 @@
 		SELECT COUNT(`no`) FROM `Board_article` WHERE `parent`=0 AND `type`=#{type};
 	</select>
 	
+	<select id="selectArticle"  resultType="kr.co.farmstory.vo.ArticleVo">
+		SELECT * FROM `Board_article` WHERE `no`=#{no};
+	</select>
+	
 	<select id="selectArticles" resultType="kr.co.farmstory.vo.ArticleVo">
 		SELECT a.*, b.`nick` FROM `Board_article` AS a
 		JOIN `Board_user` AS b

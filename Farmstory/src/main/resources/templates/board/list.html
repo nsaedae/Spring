@@ -22,7 +22,7 @@
                     </tr>
                     <tr th:each="article,i:${articles}">
                         <td>[[${pageStartNum - i.index}]]</td>
-                        <td><a th:href="@{/board/view(no=${article.no})}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
+                        <td><a th:href="@{/board/view(cate=${cate}, type=${type}, no=${article.no})}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
                         <td>[[${article.nick}]]</td>
                         <td>[[${article.rdate.substring(2, 10)}]]</td>
                         <td>[[${article.hit}]]</td>

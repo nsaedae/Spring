@@ -25,6 +25,7 @@ public class ArticleVo {
 	// 추가필드
 	private String cate;
 	private MultipartFile fname;
+	private String nick;
 	
 
 }

@@ -21,11 +21,11 @@
                         <th>조회</th>
                     </tr>
                     <tr th:each="article,i:${articles}">
-                        <td>1</td>
-                        <td><a th:href="@{#}">제목입니다.</a>&nbsp;［3］</td>
-                        <td>길동이</td>
-                        <td>22-04-25</td>
-                        <td>12</td>
+                        <td>[[${article.no}]]</td>
+                        <td><a th:href="@{/board/view(no=${article.no})}">[[${article.title}]]</a>&nbsp;［[[${article.comment}]]］</td>
+                        <td>[[${article.nick}]]</td>
+                        <td>[[${article.rdate}]]</td>
+                        <td>[[${article.hit}]]</td>
                     </tr>
                 </table>
             </article>

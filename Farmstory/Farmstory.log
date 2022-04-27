@@ -3370,3 +3370,598 @@ org.springframework.web.HttpSessionRequiredException: Expected session attribute
 2022-04-27 10:22:37.692  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
 2022-04-27 10:22:37.692  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 2022-04-27 10:22:38.088  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:22:38.088  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:22:38.126  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:22:38.160  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:22:38.194  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:22:38.206  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:22:38.210  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.915 seconds (JVM running for 313.087)
+2022-04-27 10:22:38.210  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:33:00.716  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 10:33:00.716  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 10:33:00.717  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 10:33:55.017  WARN 13668 --- [http-nio-8080-exec-10] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\bigdata\AppData\Local\Temp\tomcat.8080.8019343005298660340\work\Tomcat\localhost\Farmstory\src\main\resources\static\file] as it is required by the servlet [dispatcherServlet]
+2022-04-27 10:34:19.427  INFO 13668 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:34:19.428  INFO 13668 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-04-27 10:34:19.429  INFO 13668 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-04-27 10:34:19.493  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:34:19.493  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:34:19.622  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:34:19.625  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:34:19.685  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:34:19.685  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:34:19.685  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:34:19.701  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:34:19.702  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2022-04-27 10:34:19.730  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:34:19.735  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-04-27 10:34:19.735  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:34:19.867  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-04-27 10:34:19.868  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:34:20.286  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:34:20.286  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:34:20.322  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:34:20.355  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:34:20.389  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:34:20.397  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:34:20.400  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.929 seconds (JVM running for 1015.277)
+2022-04-27 10:34:20.401  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:43:20.872  INFO 13668 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:43:20.872  INFO 13668 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-04-27 10:43:20.874  INFO 13668 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-04-27 10:43:20.938  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:43:20.939  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:43:21.065  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:43:21.068  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:43:21.127  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:43:21.128  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:43:21.128  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:43:21.144  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:43:21.144  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2022-04-27 10:43:21.172  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:43:21.177  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-04-27 10:43:21.177  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:43:21.306  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-04-27 10:43:21.307  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:43:21.691  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:43:21.691  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:43:21.727  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:43:21.760  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:43:21.797  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:43:21.806  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:43:21.809  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.892 seconds (JVM running for 1556.686)
+2022-04-27 10:43:21.809  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:43:35.878  INFO 13668 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:43:35.878  INFO 13668 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-04-27 10:43:35.880  INFO 13668 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-04-27 10:43:35.940  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:43:35.940  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:43:36.058  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:43:36.060  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:43:36.110  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:43:36.111  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:43:36.111  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:43:36.130  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:43:36.130  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2022-04-27 10:43:36.153  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:43:36.156  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-04-27 10:43:36.156  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:43:36.277  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-04-27 10:43:36.277  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:43:36.654  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:43:36.654  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:43:36.687  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:43:36.716  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:43:36.742  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:43:36.750  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:43:36.753  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.832 seconds (JVM running for 1571.63)
+2022-04-27 10:43:36.754  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:44:07.067  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 10:44:07.067  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 10:44:07.068  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 10:54:48.928  INFO 13668 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:54:48.928  INFO 13668 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-04-27 10:54:48.929  INFO 13668 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-04-27 10:54:48.993  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:54:48.994  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:54:49.121  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:54:49.124  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:54:49.183  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:54:49.183  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:54:49.183  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:54:49.199  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:54:49.199  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 204 ms
+2022-04-27 10:54:49.231  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:54:49.235  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-04-27 10:54:49.235  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:54:49.364  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-04-27 10:54:49.364  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:54:49.771  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:54:49.771  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:54:49.806  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:54:49.838  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:54:49.874  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:54:49.883  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:54:49.886  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.915 seconds (JVM running for 2244.764)
+2022-04-27 10:54:49.887  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:55:08.059  INFO 13668 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:55:08.060  INFO 13668 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-04-27 10:55:08.061  INFO 13668 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2022-04-27 10:55:08.124  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:55:08.124  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:55:08.243  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:55:08.246  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:55:08.295  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:55:08.295  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:55:08.295  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:55:08.314  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:55:08.314  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2022-04-27 10:55:08.337  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:55:08.341  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2022-04-27 10:55:08.341  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:55:08.459  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2022-04-27 10:55:08.460  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:55:08.834  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:55:08.834  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:55:08.867  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:55:08.893  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:55:08.922  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:55:08.930  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:55:08.932  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.828 seconds (JVM running for 2263.81)
+2022-04-27 10:55:08.933  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:55:40.700  INFO 13668 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:55:40.701  INFO 13668 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2022-04-27 10:55:40.702  INFO 13668 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2022-04-27 10:55:40.770  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:55:40.770  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:55:40.895  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:55:40.898  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:55:40.947  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:55:40.947  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:55:40.947  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:55:40.966  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:55:40.966  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2022-04-27 10:55:40.989  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:55:40.993  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2022-04-27 10:55:40.993  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:55:41.113  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2022-04-27 10:55:41.113  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:55:41.481  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:55:41.482  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:55:41.513  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:55:41.540  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:55:41.569  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:55:41.577  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:55:41.580  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.832 seconds (JVM running for 2296.458)
+2022-04-27 10:55:41.581  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:56:17.620  INFO 13668 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:56:17.621  INFO 13668 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2022-04-27 10:56:17.622  INFO 13668 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2022-04-27 10:56:17.683  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:56:17.683  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:56:17.802  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:56:17.804  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:56:17.852  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:56:17.853  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:56:17.853  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:56:17.872  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:56:17.872  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2022-04-27 10:56:17.896  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:56:17.900  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2022-04-27 10:56:17.900  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:56:18.028  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2022-04-27 10:56:18.028  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:56:18.429  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:56:18.429  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:56:18.464  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:56:18.494  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:56:18.528  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:56:18.535  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:56:18.538  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.875 seconds (JVM running for 2333.416)
+2022-04-27 10:56:18.539  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:56:30.510  INFO 13668 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:56:30.510  INFO 13668 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2022-04-27 10:56:30.512  INFO 13668 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2022-04-27 10:56:30.584  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:56:30.584  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:56:30.714  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:56:30.716  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:56:30.777  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:56:30.778  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:56:30.778  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:56:30.797  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:56:30.797  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 212 ms
+2022-04-27 10:56:30.823  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:56:30.827  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2022-04-27 10:56:30.827  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:56:30.955  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2022-04-27 10:56:30.956  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:56:31.354  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:56:31.354  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:56:31.387  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:56:31.416  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:56:31.442  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:56:31.451  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:56:31.454  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.892 seconds (JVM running for 2346.332)
+2022-04-27 10:56:31.455  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:58:41.445  INFO 13668 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:58:41.445  INFO 13668 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2022-04-27 10:58:41.447  INFO 13668 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2022-04-27 10:58:41.510  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:58:41.510  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:58:41.635  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:58:41.637  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:58:41.694  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:58:41.694  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:58:41.694  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:58:41.714  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:58:41.714  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 202 ms
+2022-04-27 10:58:41.740  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:58:41.744  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2022-04-27 10:58:41.744  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:58:41.862  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2022-04-27 10:58:41.862  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:58:42.234  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:58:42.234  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:58:42.269  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:58:42.305  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:58:42.337  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:58:42.346  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:58:42.349  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.86 seconds (JVM running for 2477.227)
+2022-04-27 10:58:42.349  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:58:55.325  INFO 13668 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:58:55.325  INFO 13668 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2022-04-27 10:58:55.327  INFO 13668 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2022-04-27 10:58:55.390  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:58:55.390  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:58:55.506  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:58:55.509  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:58:55.563  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:58:55.563  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:58:55.563  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:58:55.583  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:58:55.583  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2022-04-27 10:58:55.604  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:58:55.608  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2022-04-27 10:58:55.608  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:58:55.731  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2022-04-27 10:58:55.731  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:58:56.112  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:58:56.112  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:58:56.143  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:58:56.171  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:58:56.195  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:58:56.203  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:58:56.206  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.835 seconds (JVM running for 2491.083)
+2022-04-27 10:58:56.206  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:59:00.804  INFO 13668 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:00.804  INFO 13668 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2022-04-27 10:59:00.805  INFO 13668 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2022-04-27 10:59:00.866  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:59:00.867  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:59:00.983  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:59:00.985  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:59:01.033  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:59:01.034  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:59:01.034  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:59:01.053  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:59:01.053  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2022-04-27 10:59:01.076  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:59:01.079  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2022-04-27 10:59:01.080  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:59:01.206  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2022-04-27 10:59:01.206  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:59:01.615  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:59:01.615  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:01.650  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:59:01.676  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:59:01.704  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:59:01.712  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:59:01.715  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.867 seconds (JVM running for 2496.593)
+2022-04-27 10:59:01.716  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:59:11.981  INFO 13668 --- [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:11.981  INFO 13668 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2022-04-27 10:59:11.983  INFO 13668 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2022-04-27 10:59:12.042  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:59:12.042  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:59:12.162  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:59:12.164  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:59:12.214  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:59:12.214  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:59:12.214  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:59:12.233  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:59:12.233  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2022-04-27 10:59:12.256  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:59:12.260  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2022-04-27 10:59:12.260  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:59:12.381  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2022-04-27 10:59:12.382  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:59:12.769  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:59:12.769  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:12.801  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:59:12.827  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:59:12.856  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:59:12.866  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:59:12.870  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.846 seconds (JVM running for 2507.747)
+2022-04-27 10:59:12.871  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:59:15.394  INFO 13668 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:15.395  INFO 13668 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2022-04-27 10:59:15.396  INFO 13668 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2022-04-27 10:59:15.456  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:59:15.456  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:59:15.574  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:59:15.577  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:59:15.624  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:59:15.624  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:59:15.624  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:59:15.643  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:59:15.643  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-04-27 10:59:15.666  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:59:15.670  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2022-04-27 10:59:15.670  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:59:15.791  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2022-04-27 10:59:15.791  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:59:16.162  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:59:16.162  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:16.192  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:59:16.216  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:59:16.244  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:59:16.251  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:59:16.254  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.817 seconds (JVM running for 2511.132)
+2022-04-27 10:59:16.255  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 10:59:23.201  INFO 13668 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:23.202  INFO 13668 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2022-04-27 10:59:23.203  INFO 13668 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2022-04-27 10:59:23.275  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 10:59:23.275  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 10:59:23.401  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 10:59:23.404  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 10:59:23.454  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 10:59:23.454  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 10:59:23.454  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 10:59:23.473  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 10:59:23.473  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2022-04-27 10:59:23.497  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 10:59:23.501  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2022-04-27 10:59:23.501  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 10:59:23.633  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2022-04-27 10:59:23.633  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 10:59:24.060  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 10:59:24.060  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 10:59:24.089  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 10:59:24.115  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 10:59:24.144  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 10:59:24.152  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 10:59:24.155  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.903 seconds (JVM running for 2519.032)
+2022-04-27 10:59:24.155  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:00:01.554  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 11:00:01.554  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 11:00:01.555  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 11:00:20.089  INFO 13668 --- [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:20.090  INFO 13668 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2022-04-27 11:00:20.091  INFO 13668 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2022-04-27 11:00:20.154  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:00:20.155  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:00:20.269  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:00:20.272  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:00:20.321  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:00:20.321  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:00:20.321  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:00:20.340  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:00:20.340  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 184 ms
+2022-04-27 11:00:20.367  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:00:20.370  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2022-04-27 11:00:20.371  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:00:20.500  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2022-04-27 11:00:20.500  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:00:20.869  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:00:20.869  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:20.900  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:00:20.927  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:00:20.952  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:00:20.960  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:00:20.963  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.827 seconds (JVM running for 2575.84)
+2022-04-27 11:00:20.963  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:00:22.464  INFO 13668 --- [Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:22.464  INFO 13668 --- [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2022-04-27 11:00:22.466  INFO 13668 --- [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2022-04-27 11:00:22.528  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:00:22.528  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:00:22.647  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:00:22.650  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:00:22.698  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:00:22.699  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:00:22.699  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:00:22.718  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:00:22.718  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 189 ms
+2022-04-27 11:00:22.740  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:00:22.744  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2022-04-27 11:00:22.744  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:00:22.862  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2022-04-27 11:00:22.862  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:00:23.249  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:00:23.250  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:23.284  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:00:23.312  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:00:23.336  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:00:23.344  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:00:23.347  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.838 seconds (JVM running for 2578.225)
+2022-04-27 11:00:23.347  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:00:24.858  INFO 13668 --- [Thread-83] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:24.858  INFO 13668 --- [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2022-04-27 11:00:24.860  INFO 13668 --- [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2022-04-27 11:00:24.920  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:00:24.921  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:00:25.035  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:00:25.037  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:00:25.085  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:00:25.085  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:00:25.085  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:00:25.104  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:00:25.104  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
+2022-04-27 11:00:25.127  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:00:25.131  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2022-04-27 11:00:25.131  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:00:25.262  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2022-04-27 11:00:25.262  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:00:25.672  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:00:25.672  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:25.703  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:00:25.730  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:00:25.755  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:00:25.763  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:00:25.765  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.863 seconds (JVM running for 2580.643)
+2022-04-27 11:00:25.766  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:00:31.429  INFO 13668 --- [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:31.429  INFO 13668 --- [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2022-04-27 11:00:31.430  INFO 13668 --- [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2022-04-27 11:00:31.495  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:00:31.495  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:00:31.609  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:00:31.611  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:00:31.658  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:00:31.659  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:00:31.659  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:00:31.677  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:00:31.677  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 181 ms
+2022-04-27 11:00:31.700  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:00:31.703  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2022-04-27 11:00:31.703  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:00:31.820  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2022-04-27 11:00:31.820  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:00:32.190  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:00:32.190  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:32.220  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:00:32.247  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:00:32.272  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:00:32.280  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:00:32.283  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.806 seconds (JVM running for 2587.16)
+2022-04-27 11:00:32.283  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:00:36.903  INFO 13668 --- [Thread-91] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:36.903  INFO 13668 --- [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2022-04-27 11:00:36.904  INFO 13668 --- [Thread-91] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2022-04-27 11:00:36.969  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:00:36.969  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:00:37.100  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:00:37.103  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:00:37.153  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:00:37.153  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:00:37.153  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:00:37.171  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:00:37.171  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2022-04-27 11:00:37.194  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:00:37.197  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Starting...
+2022-04-27 11:00:37.197  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:00:37.318  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Start completed.
+2022-04-27 11:00:37.319  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:00:37.686  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:00:37.686  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:00:37.717  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:00:37.741  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:00:37.770  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:00:37.778  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:00:37.781  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.833 seconds (JVM running for 2592.658)
+2022-04-27 11:00:37.781  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:01:10.692  INFO 13668 --- [Thread-95] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:10.692  INFO 13668 --- [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown initiated...
+2022-04-27 11:01:10.694  INFO 13668 --- [Thread-95] com.zaxxer.hikari.HikariDataSource       : HikariPool-24 - Shutdown completed.
+2022-04-27 11:01:10.755  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:01:10.755  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:01:10.873  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:01:10.876  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:01:10.923  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:01:10.923  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:01:10.923  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:01:10.942  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:01:10.942  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2022-04-27 11:01:10.965  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:01:10.969  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Starting...
+2022-04-27 11:01:10.969  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:01:11.099  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Start completed.
+2022-04-27 11:01:11.100  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:01:11.510  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:01:11.510  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:11.540  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:01:11.566  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:01:11.594  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:01:11.601  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:01:11.604  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.867 seconds (JVM running for 2626.482)
+2022-04-27 11:01:11.605  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:01:18.319  INFO 13668 --- [Thread-99] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:18.320  INFO 13668 --- [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown initiated...
+2022-04-27 11:01:18.321  INFO 13668 --- [Thread-99] com.zaxxer.hikari.HikariDataSource       : HikariPool-25 - Shutdown completed.
+2022-04-27 11:01:18.385  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:01:18.385  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:01:18.504  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:01:18.507  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:01:18.554  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:01:18.555  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:01:18.555  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:01:18.573  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:01:18.573  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-04-27 11:01:18.596  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:01:18.605  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Starting...
+2022-04-27 11:01:18.606  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:01:18.803  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Start completed.
+2022-04-27 11:01:18.804  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:01:19.231  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:01:19.231  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:19.261  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:01:19.291  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:01:19.321  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:01:19.329  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:01:19.332  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.966 seconds (JVM running for 2634.209)
+2022-04-27 11:01:19.333  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:01:20.812  INFO 13668 --- [Thread-103] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:20.812  INFO 13668 --- [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown initiated...
+2022-04-27 11:01:20.813  INFO 13668 --- [Thread-103] com.zaxxer.hikari.HikariDataSource       : HikariPool-26 - Shutdown completed.
+2022-04-27 11:01:20.879  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:01:20.879  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:01:21.002  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:01:21.005  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:01:21.057  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:01:21.057  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:01:21.057  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:01:21.077  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:01:21.077  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2022-04-27 11:01:21.101  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:01:21.105  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Starting...
+2022-04-27 11:01:21.105  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:01:21.228  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Start completed.
+2022-04-27 11:01:21.228  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:01:21.605  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:01:21.605  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:21.636  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:01:21.664  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:01:21.689  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:01:21.697  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:01:21.699  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.839 seconds (JVM running for 2636.577)
+2022-04-27 11:01:21.700  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:01:26.298  INFO 13668 --- [Thread-107] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:26.298  INFO 13668 --- [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown initiated...
+2022-04-27 11:01:26.299  INFO 13668 --- [Thread-107] com.zaxxer.hikari.HikariDataSource       : HikariPool-27 - Shutdown completed.
+2022-04-27 11:01:26.363  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 11:01:26.363  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 11:01:26.482  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 11:01:26.484  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 11:01:26.533  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 11:01:26.533  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 11:01:26.534  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 11:01:26.552  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 11:01:26.552  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2022-04-27 11:01:26.576  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 11:01:26.579  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Starting...
+2022-04-27 11:01:26.579  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 11:01:26.700  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-28 - Start completed.
+2022-04-27 11:01:26.700  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 11:01:27.078  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 11:01:27.078  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 11:01:27.111  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 11:01:27.139  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 11:01:27.165  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 11:01:27.172  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 11:01:27.175  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.831 seconds (JVM running for 2642.052)
+2022-04-27 11:01:27.176  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 11:01:27.421  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 11:01:27.421  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 11:01:27.422  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

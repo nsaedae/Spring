@@ -18,6 +18,14 @@
 			`nName`=#{nName},
 			`rdate`=NOW();
 	</insert>
+	
+	<select id="selectArticles" resultType="kr.co.farmstory.vo.ArticleVo">
+		SELECT a.*, b.`nick` FROM `Board_article` AS a
+		JOIN `Board_user` AS b
+		ON a.`uid`=b.`uid`
+		WHERE `parent`=0 AND `type`=#{type}
+		ORDER BY `no` DESC;
+	</select>
 
 
 </mapper>

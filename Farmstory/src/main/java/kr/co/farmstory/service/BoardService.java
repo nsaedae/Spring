@@ -29,8 +29,8 @@ public class BoardService {
 	public ArticleVo selectArticle(int no) {
 		return dao.selectArticle(no);
 	}
-	public List<ArticleVo> selectArticles() {
-		return dao.selectArticles();
+	public List<ArticleVo> selectArticles(String type) {
+		return dao.selectArticles(type);
 	}
 	public void updateArticle(ArticleVo vo) {
 		dao.updateArticle(vo);

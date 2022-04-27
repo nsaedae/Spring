@@ -1,5 +1,7 @@
 package kr.co.farmstory.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +34,11 @@ public class BoardController {
 	@GetMapping("/board/list")
 	public String list(Model model, String cate, String type) {
 		
+		List<ArticleVo> articles = service.selectArticles(type);
+		
 		model.addAttribute("cate", cate);
 		model.addAttribute("type", type);
+		model.addAttribute("articles", articles);
 		
 		return "/board/list";
 	}

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -22,6 +23,13 @@ public class UserController {
 
 	@Autowired
 	private UserService service;
+	
+	// 처음 sessUser값을 초기화하는 메서드 
+	@ModelAttribute("sessUser")
+	public UserVo setUserVo() {
+		return null;
+	}
+	
 	
 	@GetMapping("/user/login")
 	public String login() {

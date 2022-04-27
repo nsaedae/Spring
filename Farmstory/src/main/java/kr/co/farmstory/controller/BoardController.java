@@ -22,7 +22,13 @@ public class BoardController {
 	@Autowired
 	private BoardService service;
 	
-
+	// 처음 sessUser값을 초기화하는 메서드 
+	@ModelAttribute("sessUser")
+	public UserVo setUserVo() {
+		return null;
+	}
+	
+	
 	@GetMapping("/board/list")
 	public String list(Model model, String cate, String type) {
 		
@@ -41,6 +47,7 @@ public class BoardController {
 		
 		model.addAttribute("cate", cate);
 		model.addAttribute("type", type);
+		
 		return "/board/write";
 	}
 	

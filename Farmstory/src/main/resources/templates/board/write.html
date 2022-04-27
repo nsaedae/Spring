@@ -23,7 +23,10 @@
                 	<input type="hidden" name="cate" th:value="${cate}"/>
                 	<input type="hidden" name="type" th:value="${type}"/>
                 	
-                	<!-- BoardController 상단에 @SessionAttributes("sessUser") 선언 해야됨 -->
+                	<!-- 
+                		BoardController 상단에 @SessionAttributes("sessUser") 선언 해야됨
+                		그리고 @ModelAttribute("sessUser") 를 초기화 하는 메서드 정의해야됨 -> BoardController 26 ~ 29라인 확인
+                	-->
                 	<input type="hidden" name="uid" th:value="${sessUser.uid}"/>
                 	
                     <table>

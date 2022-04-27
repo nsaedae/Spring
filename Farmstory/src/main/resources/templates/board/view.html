@@ -20,8 +20,8 @@
                 <tr th:if="${article.file == 1}">
                     <td>첨부파일</td>
                     <td>
-                        <a th:href="@{#">파일제목</a>
-                        <span>1회 다운로드</span>
+                        <a th:href="@{/board/filedownload(fid=${article.fvo.fid})}">[[${article.fvo.oName}]]</a>
+                        <span>[[${article.fvo.download}]]회 다운로드</span>
                     </td>
                 </tr>
                 <tr>

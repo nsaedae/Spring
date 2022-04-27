@@ -5309,3 +5309,710 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [/boar
 2022-04-27 12:05:38.134  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.819 seconds (JVM running for 6493.012)
 2022-04-27 12:05:38.135  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
 2022-04-27 12:07:34.213  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:07:34.213  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:07:34.214  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 12:40:19.667  INFO 13668 --- [Thread-251] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:40:19.668  INFO 13668 --- [Thread-251] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Shutdown initiated...
+2022-04-27 12:40:19.668  INFO 13668 --- [Thread-251] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Shutdown completed.
+2022-04-27 12:40:19.733  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:40:19.733  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:40:19.871  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:40:19.874  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:40:19.932  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:40:19.933  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:40:19.933  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:40:19.950  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:40:19.950  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2022-04-27 12:40:19.978  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:40:19.983  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Starting...
+2022-04-27 12:40:19.983  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:40:20.116  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Start completed.
+2022-04-27 12:40:20.116  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:40:20.504  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:40:20.505  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:40:20.520  WARN 13668 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\kr\co\farmstory\dao\BoardDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+2022-04-27 12:40:20.520  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:40:20.520  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Shutdown initiated...
+2022-04-27 12:40:20.545  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Shutdown completed.
+2022-04-27 12:40:20.545  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-27 12:40:20.556  INFO 13668 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-27 12:40:20.585 ERROR 13668 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\kr\co\farmstory\dao\BoardDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at kr.co.farmstory.FarmstoryApplication.main(FarmstoryApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'boardService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\kr\co\farmstory\dao\BoardDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'boardDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\kr\co\farmstory\dao\BoardDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 62 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 76 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1c6da273.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1c6da273$$FastClassBySpringCGLIB$$87e1717b.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$1c6da273.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes\mappers\board.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 90 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:263) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:254) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:246) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:119) ~[mybatis-3.5.9.jar:3.5.9]
+	... 92 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.sboard1.vo.ArticleVo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.9.jar:3.5.9]
+	... 96 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: kr.co.sboard1.vo.ArticleVo
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.9.jar:3.5.9]
+	... 98 common frames omitted
+
+2022-04-27 12:40:30.406  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:40:30.406  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:40:30.529  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:40:30.531  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:40:30.580  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:40:30.581  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:40:30.581  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:40:30.599  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:40:30.599  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2022-04-27 12:40:30.626  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:40:30.629  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Starting...
+2022-04-27 12:40:30.629  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:40:30.753  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Start completed.
+2022-04-27 12:40:30.753  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:40:31.363  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:40:31.363  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:40:31.399  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:40:31.431  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:40:31.464  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:40:31.472  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:40:31.475  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 1.087 seconds (JVM running for 8586.353)
+2022-04-27 12:40:31.476  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:01.245  INFO 13668 --- [Thread-255] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:01.245  INFO 13668 --- [Thread-255] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Shutdown initiated...
+2022-04-27 12:41:01.246  INFO 13668 --- [Thread-255] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Shutdown completed.
+2022-04-27 12:41:01.306  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:01.306  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:01.427  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:01.430  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:01.481  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:01.481  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:01.481  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:01.497  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:01.497  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2022-04-27 12:41:01.520  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:01.524  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-66 - Starting...
+2022-04-27 12:41:01.524  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:01.663  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-66 - Start completed.
+2022-04-27 12:41:01.664  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:02.122  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:02.122  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:02.154  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:02.181  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:02.206  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:02.213  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:02.216  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.928 seconds (JVM running for 8617.094)
+2022-04-27 12:41:02.217  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:03.711  INFO 13668 --- [Thread-262] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:03.712  INFO 13668 --- [Thread-262] com.zaxxer.hikari.HikariDataSource       : HikariPool-66 - Shutdown initiated...
+2022-04-27 12:41:03.713  INFO 13668 --- [Thread-262] com.zaxxer.hikari.HikariDataSource       : HikariPool-66 - Shutdown completed.
+2022-04-27 12:41:03.779  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:03.779  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:03.895  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:03.898  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:03.946  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:03.946  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:03.947  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:03.963  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:03.963  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
+2022-04-27 12:41:03.989  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:03.997  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-67 - Starting...
+2022-04-27 12:41:03.997  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:04.115  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-67 - Start completed.
+2022-04-27 12:41:04.115  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:04.489  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:04.489  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:04.517  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:04.542  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:04.567  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:04.577  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:04.579  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.817 seconds (JVM running for 8619.456)
+2022-04-27 12:41:04.580  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:08.185  INFO 13668 --- [Thread-266] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:08.185  INFO 13668 --- [Thread-266] com.zaxxer.hikari.HikariDataSource       : HikariPool-67 - Shutdown initiated...
+2022-04-27 12:41:08.186  INFO 13668 --- [Thread-266] com.zaxxer.hikari.HikariDataSource       : HikariPool-67 - Shutdown completed.
+2022-04-27 12:41:08.252  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:08.252  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:08.369  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:08.372  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:08.423  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:08.423  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:08.423  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:08.439  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:08.439  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-04-27 12:41:08.462  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:08.465  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Starting...
+2022-04-27 12:41:08.466  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:08.603  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Start completed.
+2022-04-27 12:41:08.603  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:09.030  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:09.030  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:09.060  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:09.084  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:09.108  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:09.116  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:09.118  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.884 seconds (JVM running for 8623.996)
+2022-04-27 12:41:09.119  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:42.055  INFO 13668 --- [Thread-270] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:42.055  INFO 13668 --- [Thread-270] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Shutdown initiated...
+2022-04-27 12:41:42.056  INFO 13668 --- [Thread-270] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Shutdown completed.
+2022-04-27 12:41:42.124  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:42.124  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:42.241  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:42.244  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:42.291  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:42.292  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:42.292  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:42.309  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:42.310  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2022-04-27 12:41:42.334  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:42.338  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Starting...
+2022-04-27 12:41:42.338  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:42.459  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Start completed.
+2022-04-27 12:41:42.459  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:42.842  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:42.843  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:42.872  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:42.896  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:42.921  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:42.928  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:42.931  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.824 seconds (JVM running for 8657.808)
+2022-04-27 12:41:42.931  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:44.434  INFO 13668 --- [Thread-274] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:44.434  INFO 13668 --- [Thread-274] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Shutdown initiated...
+2022-04-27 12:41:44.435  INFO 13668 --- [Thread-274] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Shutdown completed.
+2022-04-27 12:41:44.500  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:44.501  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:44.615  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:44.618  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:44.664  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:44.664  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:44.665  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:44.682  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:44.682  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 180 ms
+2022-04-27 12:41:44.708  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:44.717  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Starting...
+2022-04-27 12:41:44.718  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:44.835  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Start completed.
+2022-04-27 12:41:44.835  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:45.209  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:45.209  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:45.241  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:45.265  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:45.289  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:45.296  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:45.299  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.817 seconds (JVM running for 8660.177)
+2022-04-27 12:41:45.300  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:41:57.248  INFO 13668 --- [Thread-278] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:57.249  INFO 13668 --- [Thread-278] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Shutdown initiated...
+2022-04-27 12:41:57.250  INFO 13668 --- [Thread-278] com.zaxxer.hikari.HikariDataSource       : HikariPool-70 - Shutdown completed.
+2022-04-27 12:41:57.307  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:41:57.308  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:41:57.426  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:41:57.428  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:41:57.477  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:41:57.477  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:41:57.477  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:41:57.494  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:41:57.494  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2022-04-27 12:41:57.517  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:41:57.521  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Starting...
+2022-04-27 12:41:57.521  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:41:57.663  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Start completed.
+2022-04-27 12:41:57.663  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:41:58.111  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:41:58.111  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:41:58.151  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:41:58.174  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:41:58.199  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:41:58.207  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:41:58.210  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.921 seconds (JVM running for 8673.087)
+2022-04-27 12:41:58.210  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:42:15.099  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:42:15.100  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:42:15.101  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 12:42:39.851  WARN 13668 --- [http-nio-8080-exec-10] org.apache.catalina.connector.Request    : Creating the temporary upload location [C:\Users\bigdata\AppData\Local\Temp\tomcat.8080.4319103899137389781\work\Tomcat-1\localhost\Farmstory\src\main\resources\static\file] as it is required by the servlet [dispatcherServlet]
+2022-04-27 12:43:19.450  INFO 13668 --- [Thread-282] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:19.450  INFO 13668 --- [Thread-282] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Shutdown initiated...
+2022-04-27 12:43:19.451  INFO 13668 --- [Thread-282] com.zaxxer.hikari.HikariDataSource       : HikariPool-71 - Shutdown completed.
+2022-04-27 12:43:19.512  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:43:19.512  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:43:19.628  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:43:19.631  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:43:19.679  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:43:19.679  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:43:19.679  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:43:19.696  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:43:19.696  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2022-04-27 12:43:19.722  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:43:19.726  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Starting...
+2022-04-27 12:43:19.726  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:43:19.865  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Start completed.
+2022-04-27 12:43:19.865  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:43:20.305  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:43:20.305  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:20.337  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:43:20.362  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:43:20.388  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:43:20.396  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:43:20.399  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.906 seconds (JVM running for 8755.276)
+2022-04-27 12:43:20.400  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:43:36.502  INFO 13668 --- [Thread-286] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:36.502  INFO 13668 --- [Thread-286] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Shutdown initiated...
+2022-04-27 12:43:36.503  INFO 13668 --- [Thread-286] com.zaxxer.hikari.HikariDataSource       : HikariPool-72 - Shutdown completed.
+2022-04-27 12:43:36.561  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:43:36.561  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:43:36.678  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:43:36.681  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:43:36.730  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:43:36.730  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:43:36.730  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:43:36.747  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:43:36.747  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 184 ms
+2022-04-27 12:43:36.769  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:43:36.772  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Starting...
+2022-04-27 12:43:36.772  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:43:36.887  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Start completed.
+2022-04-27 12:43:36.887  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:43:37.254  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:43:37.254  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:37.286  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:43:37.308  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:43:37.334  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:43:37.341  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:43:37.344  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.8 seconds (JVM running for 8772.221)
+2022-04-27 12:43:37.344  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:43:57.633  INFO 13668 --- [Thread-290] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:57.633  INFO 13668 --- [Thread-290] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Shutdown initiated...
+2022-04-27 12:43:57.634  INFO 13668 --- [Thread-290] com.zaxxer.hikari.HikariDataSource       : HikariPool-73 - Shutdown completed.
+2022-04-27 12:43:57.699  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:43:57.699  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:43:57.820  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:43:57.822  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:43:57.870  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:43:57.870  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:43:57.871  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:43:57.888  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:43:57.888  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2022-04-27 12:43:57.910  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:43:57.914  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Starting...
+2022-04-27 12:43:57.914  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:43:58.036  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Start completed.
+2022-04-27 12:43:58.037  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:43:58.414  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:43:58.414  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:43:58.446  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:43:58.470  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:43:58.493  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:43:58.501  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:43:58.503  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.823 seconds (JVM running for 8793.381)
+2022-04-27 12:43:58.504  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:44:34.545  INFO 13668 --- [Thread-294] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:44:34.546  INFO 13668 --- [Thread-294] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Shutdown initiated...
+2022-04-27 12:44:34.547  INFO 13668 --- [Thread-294] com.zaxxer.hikari.HikariDataSource       : HikariPool-74 - Shutdown completed.
+2022-04-27 12:44:34.607  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:44:34.607  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:44:34.722  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:44:34.725  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:44:34.773  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:44:34.773  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:44:34.774  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:44:34.790  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:44:34.790  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 182 ms
+2022-04-27 12:44:34.813  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:44:34.817  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Starting...
+2022-04-27 12:44:34.817  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:44:34.936  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Start completed.
+2022-04-27 12:44:34.936  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:44:35.311  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:44:35.311  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:44:35.346  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:44:35.373  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:44:35.408  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:44:35.418  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:44:35.421  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.833 seconds (JVM running for 8830.298)
+2022-04-27 12:44:35.422  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:45:33.812  INFO 13668 --- [Thread-298] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:45:33.812  INFO 13668 --- [Thread-298] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Shutdown initiated...
+2022-04-27 12:45:33.813  INFO 13668 --- [Thread-298] com.zaxxer.hikari.HikariDataSource       : HikariPool-75 - Shutdown completed.
+2022-04-27 12:45:33.881  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:45:33.881  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:45:33.999  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:45:34.001  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:45:34.049  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:45:34.050  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:45:34.050  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:45:34.066  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:45:34.066  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 184 ms
+2022-04-27 12:45:34.090  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:45:34.093  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Starting...
+2022-04-27 12:45:34.093  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:45:34.214  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Start completed.
+2022-04-27 12:45:34.214  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:45:34.606  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:45:34.607  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:45:34.659  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:45:34.691  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:45:34.722  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:45:34.730  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:45:34.733  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.872 seconds (JVM running for 8889.61)
+2022-04-27 12:45:34.734  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:46:09.561  INFO 13668 --- [Thread-302] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:46:09.562  INFO 13668 --- [Thread-302] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown initiated...
+2022-04-27 12:46:09.563  INFO 13668 --- [Thread-302] com.zaxxer.hikari.HikariDataSource       : HikariPool-76 - Shutdown completed.
+2022-04-27 12:46:09.627  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 13668 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:46:09.627  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:46:09.745  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:46:09.747  INFO 13668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:46:09.795  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:46:09.796  INFO 13668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:46:09.796  INFO 13668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:46:09.813  INFO 13668 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:46:09.813  INFO 13668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 185 ms
+2022-04-27 12:46:09.836  INFO 13668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:46:09.840  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Starting...
+2022-04-27 12:46:09.840  WARN 13668 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:46:09.960  INFO 13668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Start completed.
+2022-04-27 12:46:09.961  INFO 13668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:46:10.335  INFO 13668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:46:10.335  INFO 13668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:46:10.367  WARN 13668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:46:10.391  INFO 13668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:46:10.415  INFO 13668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:46:10.423  INFO 13668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:46:10.425  INFO 13668 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.817 seconds (JVM running for 8925.303)
+2022-04-27 12:46:10.426  INFO 13668 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:46:28.579  INFO 13668 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:46:28.579  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:46:28.580  INFO 13668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 12:48:29.209  INFO 13668 --- [RMI TCP Connection(154)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-27 12:48:29.241  INFO 13668 --- [RMI TCP Connection(154)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:48:29.241  INFO 13668 --- [RMI TCP Connection(154)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown initiated...
+2022-04-27 12:48:29.242  INFO 13668 --- [RMI TCP Connection(154)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-77 - Shutdown completed.
+2022-04-27 12:48:35.504  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:48:35.505  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:48:35.538  INFO 8816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-27 12:48:35.538  INFO 8816 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-27 12:48:35.970  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:48:35.983  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:48:36.405  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:48:36.413  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:48:36.413  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:48:36.473  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:48:36.473  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 934 ms
+2022-04-27 12:48:36.617  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:48:36.655  INFO 8816 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-27 12:48:36.773  INFO 8816 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-27 12:48:36.847  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-27 12:48:36.851  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:48:37.066  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-27 12:48:37.077  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:48:37.617  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:48:37.625  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:48:37.829  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:48:37.961  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:48:38.098  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:48:38.134  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:48:38.141  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 2.898 seconds (JVM running for 3.477)
+2022-04-27 12:48:41.324  INFO 8816 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:48:41.324  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:48:41.325  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 12:49:11.026  INFO 8816 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:11.029  INFO 8816 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-27 12:49:11.035  INFO 8816 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-27 12:49:11.112  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:11.112  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:11.282  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:11.286  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:11.350  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:11.351  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:11.351  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:11.370  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:11.370  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 256 ms
+2022-04-27 12:49:11.402  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:11.406  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-04-27 12:49:11.406  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:11.535  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-04-27 12:49:11.536  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:11.912  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:11.912  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:11.959  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:11.990  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:12.020  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:12.028  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:12.032  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.951 seconds (JVM running for 37.368)
+2022-04-27 12:49:12.033  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:16.690  INFO 8816 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:16.691  INFO 8816 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-04-27 12:49:16.692  INFO 8816 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-04-27 12:49:16.747  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:16.748  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:16.883  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:16.886  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:16.941  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:16.941  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:16.942  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:16.959  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:16.959  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 209 ms
+2022-04-27 12:49:16.985  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:16.989  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-04-27 12:49:16.989  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:17.118  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-04-27 12:49:17.119  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:17.594  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:17.595  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:17.644  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:17.674  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:17.703  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:17.712  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:17.716  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.99 seconds (JVM running for 43.052)
+2022-04-27 12:49:17.717  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:20.264  INFO 8816 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:20.265  INFO 8816 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-04-27 12:49:20.266  INFO 8816 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-04-27 12:49:20.317  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:20.317  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:20.442  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:20.444  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:20.497  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:20.497  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:20.497  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:20.515  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:20.515  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 196 ms
+2022-04-27 12:49:20.540  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:20.544  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-04-27 12:49:20.544  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:20.681  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-04-27 12:49:20.681  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:21.111  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:21.112  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:21.154  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:21.182  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:21.208  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:21.217  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:21.220  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.924 seconds (JVM running for 46.557)
+2022-04-27 12:49:21.221  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:29.001  INFO 8816 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:29.001  INFO 8816 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-04-27 12:49:29.002  INFO 8816 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-04-27 12:49:29.056  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:29.056  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:29.176  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:29.178  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:29.228  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:29.229  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:29.229  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:29.247  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:29.247  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2022-04-27 12:49:29.272  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:29.276  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-04-27 12:49:29.276  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:29.396  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-04-27 12:49:29.396  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:29.772  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:29.772  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:29.812  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:29.839  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:29.864  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:29.871  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:29.873  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.839 seconds (JVM running for 55.21)
+2022-04-27 12:49:29.874  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:33.469  INFO 8816 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:33.469  INFO 8816 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-04-27 12:49:33.471  INFO 8816 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-04-27 12:49:33.524  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:33.524  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:33.646  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:33.648  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:33.700  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:33.701  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:33.701  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:33.717  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:33.718  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2022-04-27 12:49:33.742  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:33.746  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-04-27 12:49:33.746  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:33.868  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-04-27 12:49:33.869  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:34.253  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:34.253  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:34.289  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:34.315  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:34.341  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:34.350  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:34.352  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.849 seconds (JVM running for 59.689)
+2022-04-27 12:49:34.353  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:42.114  INFO 8816 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:42.114  INFO 8816 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-04-27 12:49:42.116  INFO 8816 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-04-27 12:49:42.171  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:49:42.171  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:49:42.290  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:49:42.292  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:49:42.345  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:49:42.345  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:49:42.345  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:49:42.363  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:49:42.363  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 190 ms
+2022-04-27 12:49:42.388  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:49:42.392  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-04-27 12:49:42.392  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:49:42.510  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-04-27 12:49:42.510  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:49:42.884  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:49:42.885  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:49:42.924  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:49:42.950  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:49:42.976  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:49:42.984  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:49:42.986  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.835 seconds (JVM running for 68.322)
+2022-04-27 12:49:42.987  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:49:47.836  INFO 8816 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:49:47.836  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:49:47.837  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-27 12:51:27.031  INFO 8816 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:51:27.032  INFO 8816 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-04-27 12:51:27.033  INFO 8816 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-04-27 12:51:27.102  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Starting FarmstoryApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 8816 (C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Farmstory)
+2022-04-27 12:51:27.102  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-27 12:51:27.230  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-27 12:51:27.232  INFO 8816 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-04-27 12:51:27.291  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-27 12:51:27.291  INFO 8816 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-27 12:51:27.291  INFO 8816 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-27 12:51:27.309  INFO 8816 --- [restartedMain] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring embedded WebApplicationContext
+2022-04-27 12:51:27.309  INFO 8816 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 206 ms
+2022-04-27 12:51:27.340  INFO 8816 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-27 12:51:27.344  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-04-27 12:51:27.344  WARN 8816 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-04-27 12:51:27.464  INFO 8816 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-04-27 12:51:27.464  INFO 8816 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-04-27 12:51:27.844  INFO 8816 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-27 12:51:27.844  INFO 8816 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-27 12:51:27.881  WARN 8816 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-27 12:51:27.914  INFO 8816 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-27 12:51:27.947  INFO 8816 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-27 12:51:27.956  INFO 8816 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Farmstory'
+2022-04-27 12:51:27.959  INFO 8816 --- [restartedMain] kr.co.farmstory.FarmstoryApplication     : Started FarmstoryApplication in 0.882 seconds (JVM running for 173.295)
+2022-04-27 12:51:27.959  INFO 8816 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-27 12:51:28.011  INFO 8816 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Farmstory]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-27 12:51:28.011  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-27 12:51:28.011  INFO 8816 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms

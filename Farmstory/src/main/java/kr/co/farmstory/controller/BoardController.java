@@ -3,6 +3,7 @@ package kr.co.farmstory.controller;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -56,7 +57,7 @@ public class BoardController {
 	
 	@GetMapping("/board/write")
 	public String write(@ModelAttribute("sessUser") UserVo sessUser, Model model, String cate, String type) {
-		// 로그인 체크
+		// 로그인 여부 확인
 		if(sessUser == null)
 			return "redirect:/user/login?success=102";	
 		
@@ -69,7 +70,7 @@ public class BoardController {
 	
 	@PostMapping("/board/write")
 	public String write(@ModelAttribute("sessUser") UserVo sessUser, ArticleVo vo, HttpServletRequest req) {
-		// 로그인 체크
+		// 로그인 여부 확인
 		if(sessUser == null)
 			return "redirect:/user/login?success=102";
 		
@@ -100,7 +101,9 @@ public class BoardController {
 	
 	@GetMapping("/board/view")
 	public String view(@ModelAttribute("sessUser") UserVo sessUser, Model model, String cate, String type, int no) {
-		
+		// 로그인 여부 확인
+		if(sessUser == null)
+			return "redirect:/user/login?success=102";
 		
 		ArticleVo article = service.selectArticle(no);
 		
@@ -113,8 +116,24 @@ public class BoardController {
 	}
 	
 	@GetMapping("/board/modify")
-	public String modify() {
+	public String modify(@ModelAttribute("sessUser") UserVo sessUser) {
+		// 로그인 여부 확인
+		if(sessUser == null)
+			return "redirect:/user/login?success=102";
+		
 		return "/board/modify";
+	}
+	
+	
+	@GetMapping("/board/filedownload")
+	public void filedownload(int fid, HttpServletResponse resp) {
+		// 파일 다운로드 카운트 +1
+		
+		// 파일 다운로드 정보조회
+		FileVo fvo = service.selectFile(fid);
+		
+		// 파일 다운로드
+		service.fileDownload(resp, fvo);
 	}
 	
 }

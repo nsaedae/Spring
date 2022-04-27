@@ -23,8 +23,35 @@
 		SELECT COUNT(`no`) FROM `Board_article` WHERE `parent`=0 AND `type`=#{type};
 	</select>
 	
-	<select id="selectArticle"  resultType="kr.co.farmstory.vo.ArticleVo">
-		SELECT * FROM `Board_article` WHERE `no`=#{no};
+	<!-- SELECT JOIN 결과를 출력을 위한 형식을 정하는 태그 -->
+	<resultMap type="kr.co.farmstory.vo.ArticleVo" id="selectArticleResultMap">
+		<id     column="no"      property="no"/>
+		<result column="parent"  property="parent"/>
+		<result column="comment" property="comment"/>
+		<result column="type"    property="type"/>
+		<result column="title"   property="title"/>
+		<result column="content" property="content"/>
+		<result column="file"    property="file"/>
+		<result column="hit"     property="hit"/>
+		<result column="uid"     property="uid"/>
+		<result column="regip"   property="regip"/>
+		<result column="rdate"   property="rdate"/>
+		
+		<association property="fvo" javaType="kr.co.farmstory.vo.FileVo">
+			<id     column="fid"      property="fid"/>
+			<result column="parent"   property="parent"/>
+			<result column="oName"    property="oName"/>
+			<result column="nName"    property="nName"/>
+			<result column="download" property="download"/>
+			<result column="rdate"    property="rdate"/>
+		</association>
+	</resultMap>
+	
+	<select id="selectArticle"  resultMap="selectArticleResultMap">
+		SELECT * FROM `Board_article` AS a
+		LEFT JOIN `Board_file` AS b
+		ON a.`no` = b.`parent`
+		WHERE `no`=#{no};
 	</select>
 	
 	<select id="selectArticles" resultType="kr.co.farmstory.vo.ArticleVo">
@@ -34,6 +61,10 @@
 		WHERE `parent`=0 AND `type`=#{type}
 		ORDER BY `no` DESC
 		LIMIT #{start}, 10;
+	</select>
+	
+	<select id="selectFile" resultType="kr.co.farmstory.vo.FileVo">
+		SELECT * FROM `Board_file` WHERE `fid`=#{fid};
 	</select>
 
 

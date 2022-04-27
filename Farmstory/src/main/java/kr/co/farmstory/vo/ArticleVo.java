@@ -26,6 +26,7 @@ public class ArticleVo {
 	private String cate;
 	private MultipartFile fname;
 	private String nick;
-	
+		
+	private FileVo fvo;
 
 }

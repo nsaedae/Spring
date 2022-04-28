@@ -16,6 +16,7 @@ public interface BoardDao {
 	public ArticleVo selectArticle(int no);
 	public List<ArticleVo> selectArticles(String type, int start);
 	public FileVo selectFile(int fid);
+	
 	public void updateArticle(ArticleVo vo);
 	public void deleteArticle(int no);
 }

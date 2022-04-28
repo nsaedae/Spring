@@ -66,6 +66,8 @@
 	<select id="selectFile" resultType="kr.co.farmstory.vo.FileVo">
 		SELECT * FROM `Board_file` WHERE `fid`=#{fid};
 	</select>
+	
+	
 
 
 </mapper>

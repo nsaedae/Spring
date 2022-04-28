@@ -44,6 +44,9 @@ public class BoardService {
 	public FileVo selectFile(int fid) {
 		return dao.selectFile(fid);
 	}
+	
+	
+	
 	public void updateArticle(ArticleVo vo) {
 		dao.updateArticle(vo);
 	}

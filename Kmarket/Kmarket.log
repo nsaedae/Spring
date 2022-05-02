@@ -2004,3 +2004,7 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2022-05-02 11:36:52.690  INFO 10852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-05-02 11:36:52.690  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-05-02 11:36:52.691  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-02 12:42:58.039  INFO 10852 --- [RMI TCP Connection(161)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-05-02 12:42:58.048  INFO 10852 --- [RMI TCP Connection(161)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 12:42:58.048  INFO 10852 --- [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Shutdown initiated...
+2022-05-02 12:42:58.049  INFO 10852 --- [RMI TCP Connection(161)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Shutdown completed.

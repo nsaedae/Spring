@@ -1966,3 +1966,41 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2022-05-02 11:11:53.014  INFO 10852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Start completed.
 2022-05-02 11:11:53.014  INFO 10852 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 2022-05-02 11:11:53.389  INFO 10852 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-02 11:11:53.389  INFO 10852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 11:11:53.400  WARN 10852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-02 11:11:53.449  INFO 10852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-02 11:11:53.494  INFO 10852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-02 11:11:53.505  INFO 10852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Kmarket'
+2022-05-02 11:11:53.509  INFO 10852 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.84 seconds (JVM running for 3930.832)
+2022-05-02 11:11:53.510  INFO 10852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-02 11:20:50.976  INFO 10852 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/Kmarket]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-02 11:20:50.976  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-02 11:20:50.978  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-02 11:36:29.154  INFO 10852 --- [Thread-267] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 11:36:29.155  INFO 10852 --- [Thread-267] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Shutdown initiated...
+2022-05-02 11:36:29.156  INFO 10852 --- [Thread-267] com.zaxxer.hikari.HikariDataSource       : HikariPool-68 - Shutdown completed.
+2022-05-02 11:36:29.218  INFO 10852 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 10852 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-02 11:36:29.219  INFO 10852 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-02 11:36:29.364  INFO 10852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-02 11:36:29.368  INFO 10852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-02 11:36:29.427  INFO 10852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-02 11:36:29.427  INFO 10852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-02 11:36:29.427  INFO 10852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-02 11:36:29.443  INFO 10852 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-02 11:36:29.443  INFO 10852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
+2022-05-02 11:36:29.466  INFO 10852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-02 11:36:29.470  INFO 10852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Starting...
+2022-05-02 11:36:29.470  WARN 10852 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-02 11:36:29.607  INFO 10852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-69 - Start completed.
+2022-05-02 11:36:29.607  INFO 10852 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-02 11:36:30.004  INFO 10852 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-02 11:36:30.004  INFO 10852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-02 11:36:30.016  WARN 10852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-02 11:36:30.050  INFO 10852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-02 11:36:30.094  INFO 10852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-02 11:36:30.104  INFO 10852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-02 11:36:30.106  INFO 10852 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.909 seconds (JVM running for 5407.43)
+2022-05-02 11:36:30.107  INFO 10852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-02 11:36:52.690  INFO 10852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-02 11:36:52.690  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-02 11:36:52.691  INFO 10852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

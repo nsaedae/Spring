@@ -6,5 +6,8 @@
 		SELECT * FROM `km_product_cate1`;	
 	</select>
 
+	<select id="selectCate2" resultType="kr.co.kmarket.admin.vo.Cate2Vo">
+		SELECT * FROM `km_product_cate2` WHERE `cate1`=#{cate1};	
+	</select>
 
 </mapper>

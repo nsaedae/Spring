@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import kr.co.kmarket.admin.service.AdminProductService;
 import kr.co.kmarket.admin.vo.Cate1Vo;
+import kr.co.kmarket.admin.vo.Cate2Vo;
 
 @Controller
 public class AdminProductController {
@@ -30,6 +32,12 @@ public class AdminProductController {
 	@GetMapping("/admin/product/cate1")
 	public List<Cate1Vo> cate1() {
 		return service.selectCate1();
+	}
+	
+	@ResponseBody
+	@GetMapping("/admin/product/cate2/{cate1}")
+	public List<Cate2Vo> cate2(@PathVariable("cate1") int cate1) {
+		return service.selectCate2(cate1);
 	}
 	
 	

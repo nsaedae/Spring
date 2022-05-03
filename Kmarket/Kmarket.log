@@ -1474,3 +1474,806 @@ java.sql.SQLSyntaxErrorException: Table 'test.km_prodcut_cate1' doesn't exist
 2022-05-03 11:00:42.510  INFO 5096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-05-03 11:00:42.510  INFO 5096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-05-03 11:00:42.511  INFO 5096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-03 11:34:15.817  INFO 5096 --- [Thread-179] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:34:15.818  INFO 5096 --- [Thread-179] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown initiated...
+2022-05-03 11:34:15.819  INFO 5096 --- [Thread-179] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown completed.
+2022-05-03 11:34:15.898  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:34:15.899  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:34:16.023  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:34:16.026  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:34:16.084  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:34:16.084  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:34:16.084  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:34:16.100  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:34:16.100  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2022-05-03 11:34:16.125  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:34:16.129  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Starting...
+2022-05-03 11:34:16.129  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:34:16.239  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Start completed.
+2022-05-03 11:34:16.239  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:34:16.697  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:34:16.699  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:34:16.730  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:34:16.760  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:34:16.794  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:34:16.805  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:34:16.807  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.932 seconds (JVM running for 7277.153)
+2022-05-03 11:34:16.808  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:34:19.354  INFO 5096 --- [Thread-183] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:34:19.354  INFO 5096 --- [Thread-183] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown initiated...
+2022-05-03 11:34:19.355  INFO 5096 --- [Thread-183] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown completed.
+2022-05-03 11:34:19.423  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:34:19.424  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:34:19.544  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:34:19.547  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:34:19.596  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:34:19.596  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:34:19.596  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:34:19.613  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:34:19.613  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2022-05-03 11:34:19.633  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:34:19.637  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Starting...
+2022-05-03 11:34:19.637  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:34:19.761  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Start completed.
+2022-05-03 11:34:19.761  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:34:20.254  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:34:20.254  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:34:20.282  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:34:20.306  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:34:20.331  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:34:20.340  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:34:20.343  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.939 seconds (JVM running for 7280.689)
+2022-05-03 11:34:20.344  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:35:16.410  INFO 5096 --- [Thread-187] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:16.410  INFO 5096 --- [Thread-187] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown initiated...
+2022-05-03 11:35:16.411  INFO 5096 --- [Thread-187] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown completed.
+2022-05-03 11:35:16.474  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:35:16.474  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:35:16.610  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:35:16.613  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:35:16.671  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:35:16.672  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:35:16.672  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:35:16.688  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:35:16.688  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 213 ms
+2022-05-03 11:35:16.712  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:35:16.718  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Starting...
+2022-05-03 11:35:16.718  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:35:16.851  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Start completed.
+2022-05-03 11:35:16.851  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:35:17.343  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:35:17.344  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:17.358  WARN 5096 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+2022-05-03 11:35:17.358  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:17.358  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown initiated...
+2022-05-03 11:35:17.450  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown completed.
+2022-05-03 11:35:17.450  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-03 11:35:17.453  INFO 5096 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-03 11:35:17.458 ERROR 5096 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at kr.co.kmarket.KmarketApplication.main(KmarketApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 62 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 76 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd$$FastClassBySpringCGLIB$$fe7458d.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 90 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection already contains value for kr.co.kmarket.admin.dao.AdminProductDao.selectCate1. please check file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml] and file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:1037) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:993) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.session.Configuration.addMappedStatement(Configuration.java:791) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.MapperBuilderAssistant.addMappedStatement(MapperBuilderAssistant.java:297) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:113) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121) ~[mybatis-3.5.9.jar:3.5.9]
+	... 92 common frames omitted
+
+2022-05-03 11:35:23.040  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:35:23.040  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:35:23.158  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:35:23.161  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:35:23.210  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:35:23.211  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:35:23.211  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:35:23.227  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:35:23.227  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:35:23.248  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:35:23.251  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-49 - Starting...
+2022-05-03 11:35:23.251  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:35:23.387  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-49 - Start completed.
+2022-05-03 11:35:23.388  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:35:23.918  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:35:23.918  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:23.949  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:35:23.979  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:35:24.009  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:35:24.018  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:35:24.021  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.998 seconds (JVM running for 7344.366)
+2022-05-03 11:35:24.022  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:35:27.528  INFO 5096 --- [Thread-191] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:27.528  INFO 5096 --- [Thread-191] com.zaxxer.hikari.HikariDataSource       : HikariPool-49 - Shutdown initiated...
+2022-05-03 11:35:27.529  INFO 5096 --- [Thread-191] com.zaxxer.hikari.HikariDataSource       : HikariPool-49 - Shutdown completed.
+2022-05-03 11:35:27.595  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:35:27.596  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:35:27.712  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:35:27.715  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:35:27.763  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:35:27.764  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:35:27.764  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:35:27.780  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:35:27.780  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2022-05-03 11:35:27.802  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:35:27.805  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-50 - Starting...
+2022-05-03 11:35:27.805  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:35:27.924  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-50 - Start completed.
+2022-05-03 11:35:27.924  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:35:28.402  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:35:28.402  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:28.432  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:35:28.456  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:35:28.481  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:35:28.490  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:35:28.492  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.913 seconds (JVM running for 7348.837)
+2022-05-03 11:35:28.493  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:35:31.999  INFO 5096 --- [Thread-198] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:31.999  INFO 5096 --- [Thread-198] com.zaxxer.hikari.HikariDataSource       : HikariPool-50 - Shutdown initiated...
+2022-05-03 11:35:32.000  INFO 5096 --- [Thread-198] com.zaxxer.hikari.HikariDataSource       : HikariPool-50 - Shutdown completed.
+2022-05-03 11:35:32.068  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:35:32.068  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:35:32.187  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:35:32.190  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:35:32.239  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:35:32.239  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:35:32.240  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:35:32.256  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-4].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:35:32.256  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2022-05-03 11:35:32.282  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:35:32.286  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Starting...
+2022-05-03 11:35:32.286  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:35:32.418  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Start completed.
+2022-05-03 11:35:32.418  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:35:32.954  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:35:32.955  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:32.972  WARN 5096 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+2022-05-03 11:35:32.972  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:32.972  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Shutdown initiated...
+2022-05-03 11:35:33.028  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Shutdown completed.
+2022-05-03 11:35:33.028  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-03 11:35:33.032  INFO 5096 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-03 11:35:33.036 ERROR 5096 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at kr.co.kmarket.KmarketApplication.main(KmarketApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'adminProductService': Unsatisfied dependency expressed through field 'dao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminProductDao' defined in file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\kr\co\kmarket\admin\dao\AdminProductDao.class]: Cannot resolve reference to bean 'sqlSessionTemplate' while setting bean property 'sqlSessionTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionTemplate' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionTemplate' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 52 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 62 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 76 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:491) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:633) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:188) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd$$FastClassBySpringCGLIB$$fe7458d.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2202dcd.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.2.2.jar:2.2.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 77 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes\mappers\admin\product.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:611) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 90 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:102) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121) ~[mybatis-3.5.9.jar:3.5.9]
+	... 92 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'kr.co.kmarket.admin.vo.Cate2Vo'.  Cause: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.9.jar:3.5.9]
+	... 96 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: kr.co.kmarket.admin.vo.Cate2Vo
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.9.jar:3.5.9]
+	... 98 common frames omitted
+
+2022-05-03 11:35:46.996  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:35:46.996  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:35:47.121  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:35:47.125  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:35:47.179  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:35:47.179  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:35:47.179  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:35:47.197  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:35:47.197  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2022-05-03 11:35:47.220  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:35:47.224  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-52 - Starting...
+2022-05-03 11:35:47.224  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:35:47.353  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-52 - Start completed.
+2022-05-03 11:35:47.354  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:35:47.888  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:35:47.888  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:35:47.920  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:35:47.947  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:35:47.975  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:35:47.984  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:35:47.987  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.011 seconds (JVM running for 7368.333)
+2022-05-03 11:35:47.988  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:36:08.266  INFO 5096 --- [Thread-202] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:08.266  INFO 5096 --- [Thread-202] com.zaxxer.hikari.HikariDataSource       : HikariPool-52 - Shutdown initiated...
+2022-05-03 11:36:08.267  INFO 5096 --- [Thread-202] com.zaxxer.hikari.HikariDataSource       : HikariPool-52 - Shutdown completed.
+2022-05-03 11:36:08.322  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:36:08.322  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:36:08.443  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:36:08.446  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:36:08.495  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:36:08.495  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:36:08.495  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:36:08.510  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:36:08.511  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2022-05-03 11:36:08.532  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:36:08.536  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-53 - Starting...
+2022-05-03 11:36:08.536  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:36:08.652  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-53 - Start completed.
+2022-05-03 11:36:08.652  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:36:09.146  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:36:09.147  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:09.177  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:36:09.201  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:36:09.226  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:36:09.235  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:36:09.238  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.933 seconds (JVM running for 7389.583)
+2022-05-03 11:36:09.238  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:36:40.956  INFO 5096 --- [Thread-209] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:40.956  INFO 5096 --- [Thread-209] com.zaxxer.hikari.HikariDataSource       : HikariPool-53 - Shutdown initiated...
+2022-05-03 11:36:40.957  INFO 5096 --- [Thread-209] com.zaxxer.hikari.HikariDataSource       : HikariPool-53 - Shutdown completed.
+2022-05-03 11:36:41.016  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:36:41.016  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:36:41.136  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:36:41.140  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:36:41.164 ERROR 5096 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.Error: Unresolved compilation problem: 
+	Cate2Vo cannot be resolved to a type
+
+	at kr.co.kmarket.admin.dao.AdminProductDao.<clinit>(AdminProductDao.java:15) ~[classes/:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:186) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.9.jar:3.5.9]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.processBeanDefinitions(ClassPathMapperScanner.java:239) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:211) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.scan(ClassPathBeanDefinitionScanner.java:254) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.mybatis.spring.mapper.MapperScannerConfigurer.postProcessBeanDefinitionRegistry(MapperScannerConfigurer.java:375) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:142) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at kr.co.kmarket.KmarketApplication.main(KmarketApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+
+2022-05-03 11:36:44.751  INFO 5096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-03 11:36:44.751  INFO 5096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-03 11:36:44.754  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:36:44.754  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:36:44.874  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:36:44.877  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:36:44.925  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:36:44.925  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:36:44.925  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:36:44.941  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:36:44.941  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:36:44.962  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:36:44.966  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-54 - Starting...
+2022-05-03 11:36:44.966  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:36:45.103  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-54 - Start completed.
+2022-05-03 11:36:45.104  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:36:45.661  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:36:45.661  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:45.692  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:36:45.715  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:36:45.739  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:36:45.748  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:36:45.751  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.013 seconds (JVM running for 7426.097)
+2022-05-03 11:36:45.752  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:36:54.514  INFO 5096 --- [Thread-213] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:54.514  INFO 5096 --- [Thread-213] com.zaxxer.hikari.HikariDataSource       : HikariPool-54 - Shutdown initiated...
+2022-05-03 11:36:54.515  INFO 5096 --- [Thread-213] com.zaxxer.hikari.HikariDataSource       : HikariPool-54 - Shutdown completed.
+2022-05-03 11:36:54.568  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:36:54.568  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:36:54.687  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:36:54.690  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:36:54.739  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:36:54.739  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:36:54.739  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:36:54.756  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:36:54.756  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:36:54.777  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:36:54.781  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-55 - Starting...
+2022-05-03 11:36:54.781  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:36:54.921  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-55 - Start completed.
+2022-05-03 11:36:54.922  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:36:55.534  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:36:55.535  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:36:55.566  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:36:55.589  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:36:55.614  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:36:55.623  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:36:55.626  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.075 seconds (JVM running for 7435.972)
+2022-05-03 11:36:55.627  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:37:16.958  INFO 5096 --- [Thread-220] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:16.958  INFO 5096 --- [Thread-220] com.zaxxer.hikari.HikariDataSource       : HikariPool-55 - Shutdown initiated...
+2022-05-03 11:37:16.959  INFO 5096 --- [Thread-220] com.zaxxer.hikari.HikariDataSource       : HikariPool-55 - Shutdown completed.
+2022-05-03 11:37:17.020  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:37:17.020  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:37:17.139  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:37:17.143  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:37:17.192  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:37:17.192  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:37:17.192  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:37:17.209  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:37:17.209  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2022-05-03 11:37:17.230  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:37:17.234  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-56 - Starting...
+2022-05-03 11:37:17.234  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:37:17.367  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-56 - Start completed.
+2022-05-03 11:37:17.367  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:37:17.865  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:37:17.866  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:17.893  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:37:17.916  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:37:17.941  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:37:17.950  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:37:17.953  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.952 seconds (JVM running for 7458.298)
+2022-05-03 11:37:17.954  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:37:44.469  INFO 5096 --- [Thread-224] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:44.469  INFO 5096 --- [Thread-224] com.zaxxer.hikari.HikariDataSource       : HikariPool-56 - Shutdown initiated...
+2022-05-03 11:37:44.470  INFO 5096 --- [Thread-224] com.zaxxer.hikari.HikariDataSource       : HikariPool-56 - Shutdown completed.
+2022-05-03 11:37:44.526  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:37:44.526  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:37:44.645  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:37:44.648  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:37:44.696  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:37:44.696  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:37:44.696  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:37:44.713  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:37:44.713  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:37:44.733  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:37:44.737  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-57 - Starting...
+2022-05-03 11:37:44.737  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:37:44.901  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-57 - Start completed.
+2022-05-03 11:37:44.901  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:37:45.396  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:37:45.397  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:45.427  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:37:45.450  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:37:45.475  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:37:45.484  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:37:45.487  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.979 seconds (JVM running for 7485.832)
+2022-05-03 11:37:45.487  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:37:58.472  INFO 5096 --- [Thread-228] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:58.473  INFO 5096 --- [Thread-228] com.zaxxer.hikari.HikariDataSource       : HikariPool-57 - Shutdown initiated...
+2022-05-03 11:37:58.474  INFO 5096 --- [Thread-228] com.zaxxer.hikari.HikariDataSource       : HikariPool-57 - Shutdown completed.
+2022-05-03 11:37:58.531  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:37:58.531  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:37:58.648  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:37:58.651  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:37:58.700  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:37:58.701  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:37:58.701  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:37:58.718  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:37:58.718  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:37:58.738  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:37:58.742  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-58 - Starting...
+2022-05-03 11:37:58.742  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:37:58.862  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-58 - Start completed.
+2022-05-03 11:37:58.862  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:37:59.359  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:37:59.360  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:37:59.391  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:37:59.415  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:37:59.440  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:37:59.449  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:37:59.452  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.939 seconds (JVM running for 7499.797)
+2022-05-03 11:37:59.452  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:38:20.140  INFO 5096 --- [Thread-232] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:20.141  INFO 5096 --- [Thread-232] com.zaxxer.hikari.HikariDataSource       : HikariPool-58 - Shutdown initiated...
+2022-05-03 11:38:20.142  INFO 5096 --- [Thread-232] com.zaxxer.hikari.HikariDataSource       : HikariPool-58 - Shutdown completed.
+2022-05-03 11:38:20.198  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:38:20.198  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:38:20.317  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:38:20.320  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:38:20.368  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:38:20.368  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:38:20.369  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:38:20.385  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:38:20.385  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2022-05-03 11:38:20.406  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:38:20.410  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-59 - Starting...
+2022-05-03 11:38:20.410  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:38:20.545  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-59 - Start completed.
+2022-05-03 11:38:20.546  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:38:21.107  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:38:21.108  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:21.138  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:38:21.161  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:38:21.184  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:38:21.193  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:38:21.195  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.017 seconds (JVM running for 7521.541)
+2022-05-03 11:38:21.196  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:38:24.750  INFO 5096 --- [Thread-236] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:24.751  INFO 5096 --- [Thread-236] com.zaxxer.hikari.HikariDataSource       : HikariPool-59 - Shutdown initiated...
+2022-05-03 11:38:24.752  INFO 5096 --- [Thread-236] com.zaxxer.hikari.HikariDataSource       : HikariPool-59 - Shutdown completed.
+2022-05-03 11:38:24.809  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:38:24.809  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:38:24.926  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:38:24.929  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:38:24.977  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:38:24.977  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:38:24.977  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:38:24.993  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:38:24.994  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 184 ms
+2022-05-03 11:38:25.014  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:38:25.018  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-60 - Starting...
+2022-05-03 11:38:25.018  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:38:25.138  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-60 - Start completed.
+2022-05-03 11:38:25.138  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:38:25.626  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:38:25.626  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:25.656  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:38:25.679  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:38:25.703  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:38:25.712  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:38:25.715  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.925 seconds (JVM running for 7526.06)
+2022-05-03 11:38:25.716  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:38:33.474  INFO 5096 --- [Thread-240] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:33.475  INFO 5096 --- [Thread-240] com.zaxxer.hikari.HikariDataSource       : HikariPool-60 - Shutdown initiated...
+2022-05-03 11:38:33.475  INFO 5096 --- [Thread-240] com.zaxxer.hikari.HikariDataSource       : HikariPool-60 - Shutdown completed.
+2022-05-03 11:38:33.533  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:38:33.533  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:38:33.653  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:38:33.656  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:38:33.705  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:38:33.705  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:38:33.705  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:38:33.721  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:38:33.721  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 187 ms
+2022-05-03 11:38:33.742  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:38:33.746  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-61 - Starting...
+2022-05-03 11:38:33.746  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:38:33.879  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-61 - Start completed.
+2022-05-03 11:38:33.879  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:38:34.424  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:38:34.424  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:34.453  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:38:34.481  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:38:34.516  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:38:34.527  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:38:34.530  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.016 seconds (JVM running for 7534.876)
+2022-05-03 11:38:34.531  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:38:54.837  INFO 5096 --- [Thread-244] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:54.837  INFO 5096 --- [Thread-244] com.zaxxer.hikari.HikariDataSource       : HikariPool-61 - Shutdown initiated...
+2022-05-03 11:38:54.838  INFO 5096 --- [Thread-244] com.zaxxer.hikari.HikariDataSource       : HikariPool-61 - Shutdown completed.
+2022-05-03 11:38:54.897  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:38:54.897  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:38:55.026  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:38:55.030  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:38:55.079  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:38:55.080  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:38:55.080  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:38:55.096  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:38:55.096  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2022-05-03 11:38:55.117  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:38:55.121  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-62 - Starting...
+2022-05-03 11:38:55.121  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:38:55.240  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-62 - Start completed.
+2022-05-03 11:38:55.240  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:38:55.770  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:38:55.770  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:55.806  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:38:55.839  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:38:55.867  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:38:55.882  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:38:55.887  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.01 seconds (JVM running for 7556.232)
+2022-05-03 11:38:55.888  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:38:57.391  INFO 5096 --- [Thread-248] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:57.391  INFO 5096 --- [Thread-248] com.zaxxer.hikari.HikariDataSource       : HikariPool-62 - Shutdown initiated...
+2022-05-03 11:38:57.392  INFO 5096 --- [Thread-248] com.zaxxer.hikari.HikariDataSource       : HikariPool-62 - Shutdown completed.
+2022-05-03 11:38:57.450  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:38:57.450  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:38:57.589  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:38:57.592  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:38:57.650  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:38:57.650  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:38:57.650  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:38:57.667  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:38:57.667  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 216 ms
+2022-05-03 11:38:57.692  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:38:57.696  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Starting...
+2022-05-03 11:38:57.696  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:38:57.817  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Start completed.
+2022-05-03 11:38:57.817  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:38:58.324  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:38:58.324  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:38:58.351  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:38:58.376  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:38:58.400  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:38:58.409  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:38:58.411  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.98 seconds (JVM running for 7558.757)
+2022-05-03 11:38:58.412  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:39:26.382  INFO 5096 --- [Thread-252] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:39:26.383  INFO 5096 --- [Thread-252] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Shutdown initiated...
+2022-05-03 11:39:26.384  INFO 5096 --- [Thread-252] com.zaxxer.hikari.HikariDataSource       : HikariPool-63 - Shutdown completed.
+2022-05-03 11:39:26.445  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:39:26.445  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:39:26.564  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:39:26.568  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:39:26.624  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:39:26.624  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:39:26.624  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:39:26.641  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:39:26.641  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 195 ms
+2022-05-03 11:39:26.663  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:39:26.667  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Starting...
+2022-05-03 11:39:26.667  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:39:26.782  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Start completed.
+2022-05-03 11:39:26.782  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:39:27.261  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:39:27.262  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:39:27.299  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:39:27.352  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:39:27.405  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:39:27.425  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:39:27.430  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 1.004 seconds (JVM running for 7587.776)
+2022-05-03 11:39:27.432  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:39:28.908  INFO 5096 --- [Thread-256] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:39:28.908  INFO 5096 --- [Thread-256] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Shutdown initiated...
+2022-05-03 11:39:28.909  INFO 5096 --- [Thread-256] com.zaxxer.hikari.HikariDataSource       : HikariPool-64 - Shutdown completed.
+2022-05-03 11:39:28.965  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Starting KmarketApplication using Java 17.0.2 on DESKTOP-H1RHB6L with PID 5096 (C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket\target\classes started by bigdata in C:\Users\bigdata\Desktop\Workspace\Spring\Kmarket)
+2022-05-03 11:39:28.965  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : No active profile set, falling back to 1 default profile: "default"
+2022-05-03 11:39:29.086  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-03 11:39:29.089  INFO 5096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-05-03 11:39:29.142  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-03 11:39:29.142  INFO 5096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-03 11:39:29.142  INFO 5096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-03 11:39:29.159  INFO 5096 --- [restartedMain] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-03 11:39:29.159  INFO 5096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2022-05-03 11:39:29.180  INFO 5096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-03 11:39:29.184  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Starting...
+2022-05-03 11:39:29.184  WARN 5096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-05-03 11:39:29.303  INFO 5096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-65 - Start completed.
+2022-05-03 11:39:29.304  INFO 5096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-05-03 11:39:29.806  INFO 5096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-03 11:39:29.807  INFO 5096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-03 11:39:29.835  WARN 5096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-03 11:39:29.864  INFO 5096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-03 11:39:29.899  INFO 5096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-03 11:39:29.909  INFO 5096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-03 11:39:29.912  INFO 5096 --- [restartedMain] kr.co.kmarket.KmarketApplication         : Started KmarketApplication in 0.964 seconds (JVM running for 7590.257)
+2022-05-03 11:39:29.912  INFO 5096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-03 11:39:54.272  INFO 5096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-5].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-03 11:39:54.272  INFO 5096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-03 11:39:54.273  INFO 5096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

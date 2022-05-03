@@ -13,21 +13,34 @@
     <script>
     	$(function(){
     		
+    		let selectCate1 = $('select[name=cate1]');
+    		let selectCate2 = $('select[name=cate2]');
+    		
     		// 1차 카테고리 데이터 불러오기
 			$.get('/admin/product/cate1', function(data){
 				//console.log(data);
-				$.each(data, function(i, vo){
-					$('select[name=cate1]').append("<option value='"+vo.cate1+"'>"+vo.title+"</option>");
+				$.each(data, function(i, vo){					
+					selectCate1.append("<option value='"+vo.cate1+"'>"+vo.title+"</option>");
 				});
 			});    		
     		
-    		
-    		
-    		
+    		// 2차 카테고리 데이터 불러오기
+			selectCate1.change(function(){
+				
+				let cate1 = $(this).val();
+				
+				// 2차 카테고리 비우기
+				selectCate2.empty();
+				selectCate2.append("<option value='0'>2차 분류 선택</option>");
+				
+				$.get('/admin/product/cate2/'+cate1, function(data){
+					//console.log(data);
+					$.each(data, function(i, vo){					
+						selectCate2.append("<option value='"+vo.cate2+"'>"+vo.title+"</option>");
+					});					
+				});
+			});
     	});
-    
-    
-    
     </script>
     
     
@@ -69,12 +82,8 @@
                                 <tr>
                                     <td>2차 분류</td>
                                     <td>
-                                        <select name="category2">
-                                            <option value="cate0">2차 분류 선택</option>
-                                            <option value="cate21">남성의류</option>
-                                            <option value="cate22">여성의류</option>
-                                            <option value="cate23">잡화</option>
-                                            <option value="cate24">뷰티</option>                                                
+                                        <select name="cate2">
+                                            <option value="0">2차 분류 선택</option>
                                         </select>
                                     </td>
                                 </tr>

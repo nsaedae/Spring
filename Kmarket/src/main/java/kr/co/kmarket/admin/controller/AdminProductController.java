@@ -6,11 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import kr.co.kmarket.admin.service.AdminProductService;
 import kr.co.kmarket.admin.vo.Cate1Vo;
 import kr.co.kmarket.admin.vo.Cate2Vo;
+import kr.co.kmarket.admin.vo.ProductVo;
 
 @Controller
 public class AdminProductController {
@@ -26,6 +28,14 @@ public class AdminProductController {
 	@GetMapping("/admin/product/register")
 	public String register() {
 		return "/admin/product/register";
+	}
+	
+	@PostMapping("/admin/product/register")
+	public String register(ProductVo vo) {
+		
+		service.insertProduct(vo);
+		
+		return "redirect:/admin/product/register";
 	}
 	
 	@ResponseBody

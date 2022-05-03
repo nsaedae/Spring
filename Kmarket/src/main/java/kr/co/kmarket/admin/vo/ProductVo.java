@@ -1,5 +1,9 @@
 package kr.co.kmarket.admin.vo;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.web.multipart.MultipartFile;
 
 import lombok.Getter;
@@ -46,6 +50,10 @@ public class ProductVo {
 	private MultipartFile img2;
 	private MultipartFile img3;
 	private MultipartFile imgDetail;
+	
+	public List<MultipartFile> getThumbnails() {
+		return Arrays.asList(img1, img2, img3, imgDetail);
+	}
 	
 	
 }

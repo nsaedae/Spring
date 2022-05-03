@@ -14,7 +14,12 @@
     	$(function(){
     		
     		// 1차 카테고리 데이터 불러오기
-			$.get('/admin/product/cate1', function(data){});    		
+			$.get('/admin/product/cate1', function(data){
+				//console.log(data);
+				$.each(data, function(i, vo){
+					$('select[name=cate1]').append("<option value='"+vo.cate1+"'>"+vo.title+"</option>");
+				});
+			});    		
     		
     		
     		
@@ -56,12 +61,8 @@
                                 <tr>
                                     <td>1차 분류</td>
                                     <td>
-                                        <select name="category1">
-                                            <option value="cate0">1차 분류 선택</option>
-                                            <option value="cate11">패션·의류·뷰티</option>
-                                            <option value="cate12">가전·디지털</option>
-                                            <option value="cate13">식품·생필품</option>
-                                            <option value="cate14">홈·문구·취미</option>                                                
+                                        <select name="cate1">
+                                            <option value="0">1차 분류 선택</option>                                                                                           
                                         </select>
                                     </td>
                                 </tr>

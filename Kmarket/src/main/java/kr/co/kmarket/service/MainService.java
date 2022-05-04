@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import kr.co.kmarket.dao.MainDao;
 import kr.co.kmarket.vo.CategoriesVo;
+import kr.co.kmarket.vo.ProductVo;
 
 @Service
 public class MainService {
@@ -16,6 +17,10 @@ public class MainService {
 	
 	public List<CategoriesVo> selectCategories(){
 		return dao.selectCategories();
+	}
+	
+	public List<ProductVo> selectHit() {
+		return dao.selectHit();
 	}
 
 }

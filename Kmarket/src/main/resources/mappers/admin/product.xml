@@ -10,7 +10,6 @@
 		SELECT * FROM `km_product_cate2` WHERE `cate1`=#{cate1};	
 	</select>
 	
-	
 	<insert id="insertProduct">
 		INSERT INTO `km_product` SET
 			`cate1`=#{cate1},

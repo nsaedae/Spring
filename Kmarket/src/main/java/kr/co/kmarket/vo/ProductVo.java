@@ -1,6 +1,5 @@
 package kr.co.kmarket.vo;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,6 +46,8 @@ public class ProductVo {
 	
 	//추가필드
 	private int salePrice;
+	private int order;
+	private int start;
 	
 	private MultipartFile img1;
 	private MultipartFile img2;

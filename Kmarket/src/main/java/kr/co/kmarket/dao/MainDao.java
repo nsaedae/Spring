@@ -14,6 +14,6 @@ public interface MainDao {
 	
 	public List<CategoriesVo> selectCategories();
 
-	public List<ProductVo> selectHit();
-	public List<ProductVo> selectRecommend();	
+	public List<ProductVo> selectMainProducts(String order);
+		
 }

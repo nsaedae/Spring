@@ -166,18 +166,15 @@
                             <h2>[[${product.name}]]</h2>
                             <p>[[${product.desc}]]</p>
                             <div class="org_price">
-                              <del>[[${product.price}]]</del>
+                              <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
                               <span>[[${product.discount}]]%</span>
                             </div>
                             <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
+                              <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
+                              <span th:if="${product.delivery == 0}">무료배송</span>
                             </div>
                         </a>
                     </article>
-
-                    
-                    
                 </section>
                 <!-- 추천상품 영역 -->
                 <section class="recommend">
@@ -190,12 +187,12 @@
                             <h2>[[${product.name}]]</h2>
                             <p>[[${product.desc}]]</p>
                             <div class="org_price">
-                              <del>[[${product.price}]]</del>
+                              <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
                               <span>[[${product.discount}]]%</span>
                             </div>
                             <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
+                              <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
+                              <span th:if="${product.delivery == 0}">무료배송</span>
                             </div>
                         </a>
                     </article>
@@ -203,139 +200,20 @@
                 <!-- 최신상품 영역 -->
                 <section class="new">
                     <h3><span>최신상품</span></h3>
-                    <article>
+                    <article th:each="product:${productsNew}">
                         <a href="#">
                             <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
+                              <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <h2>[[${product.name}]]</h2>
+                            <p>[[${product.desc}]]</p>
                             <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
+                              <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
+                              <span>[[${product.discount}]]%</span>
                             </div>
                             <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t3.jpg" alt="t3">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
+                              <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
+                              <span th:if="${product.delivery == 0}">무료배송</span>
                             </div>
                         </a>
                     </article>
@@ -343,139 +221,20 @@
                 <!-- 할인상품 영역 -->
                 <section class="discount">
                     <h3><span>할인상품</span></h3>
-                    <article>
+                    <article th:each="product:${productsDiscount}">
                         <a href="#">
                             <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
+                              <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
+                            <h2>[[${product.name}]]</h2>
+                            <p>[[${product.desc}]]</p>
                             <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
+                              <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
+                              <span>[[${product.discount}]]%</span>
                             </div>
                             <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <div class="thumb">
-                              <img src="./img/thumb-sample-t4.jpg" alt="t4">
-                            </div>
-                            <h2>베이직 기모 레글런 차콜레드2 차콜레드2</h2>
-                            <p>신상 긴팔 티셔츠/남자옷 무지티 티셔츠/남자옷 무지티 티셔츠</p>
-                            <div class="org_price">
-                              <del>30,000</del>
-                              <span>10%</span>
-                            </div>
-                            <div class="dis_price">
-                              <ins>27,000</ins>
-                              <span>무료배송</span>
+                              <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
+                              <span th:if="${product.delivery == 0}">무료배송</span>
                             </div>
                         </a>
                     </article>                    

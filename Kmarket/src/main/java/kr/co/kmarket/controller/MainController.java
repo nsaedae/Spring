@@ -22,9 +22,11 @@ public class MainController {
 	@GetMapping(value = {"/", "/index"})
 	public String index(Model model) {
 		
-		List<ProductVo> hitProducts = service.selectHit();
+		List<ProductVo> productsHit 	  = service.selectHit();
+		List<ProductVo> productsRecommend = service.selectRecommend();
 		
-		model.addAttribute("hitProducts", hitProducts);
+		model.addAttribute("productsHit", productsHit);
+		model.addAttribute("productsRecommend", productsRecommend);
 		
 		return "/index";
 	}

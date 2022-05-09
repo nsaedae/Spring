@@ -30,5 +30,10 @@
 		SELECT * FROM `km_product` ORDER BY `hit` DESC LIMIT 8;
 	</select>
 	
+	<!-- 추천상품 -->
+	<select id="selectRecommend" resultType="kr.co.kmarket.vo.ProductVo">
+		SELECT * FROM `km_product` ORDER BY `score` DESC LIMIT 8;
+	</select>
+	
 
 </mapper>

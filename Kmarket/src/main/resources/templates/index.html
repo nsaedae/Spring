@@ -53,92 +53,22 @@
                 <article class="best">
                   <h1><i class="fas fa-crown"></i>베스트상품</h1>
                   <ol>
-                    <li>
-                      <a href="#">
+                    <li th:each="product,i:${productsBest}">
+                      <a th:href="@{/product/view(pid=${product.pid})}">
                         <div class="thumb">
-                          <i>1</i>
-                          <img src="./img/thumb-popular-item1.jpg" alt="item1">
-                        </div>
-                        <h2>TH-파스텔드레스셔츠 - 그린</h2>
-                        <div class="org_price">
-                          <del>30,000</del>
-                          <span>10%</span>
-                        </div>
-                        <div class="dis_price">
-                          <ins>27,000</ins>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="thumb">
-                          <i>2</i>
-                          <img src="./img/thumb-sample-t1.jpg" alt="item1">
+                          <i>[[${i.index+1}]]</i>
+                          <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                         </div>
                         <article>
-                          <h2>TH-파스텔드레스셔츠 - 그린</h2>
-                          <div class="org_price">
-                            <del>30,000</del>
-                            <span>10%</span>
-                          </div>
-                          <div class="dis_price">
-                            <ins>27,000</ins>
-                          </div>
-                        </article>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="thumb">
-                          <i>3</i>
-                          <img src="./img/thumb-sample-t2.jpg" alt="item1">
-                        </div>
-                        <article>
-                          <h2>TH-파스텔드레스셔츠 - 그린</h2>
-                          <div class="org_price">
-                            <del>30,000</del>
-                            <span>10%</span>
-                          </div>
-                          <div class="dis_price">
-                            <ins>27,000</ins>
-                          </div>
-                        </article>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="thumb">
-                          <i>4</i>
-                          <img src="./img/thumb-sample-t3.jpg" alt="item1">
-                        </div>
-                        <article>
-                          <h2>TH-파스텔드레스셔츠 - 그린</h2>
-                          <div class="org_price">
-                            <del>30,000</del>
-                            <span>10%</span>
-                          </div>
-                          <div class="dis_price">
-                            <ins>27,000</ins>
-                          </div>
-                        </article>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="thumb">
-                          <i>5</i>
-                          <img src="./img/thumb-sample-t4.jpg" alt="item1">
-                        </div>
-                        <article>
-                          <h2>TH-파스텔드레스셔츠 - 그린</h2>
-                          <div class="org_price">
-                            <del>30,000</del>
-                            <span>10%</span>
-                          </div>
-                          <div class="dis_price">
-                            <ins>27,000</ins>
-                          </div>
-                        </article>
+	                        <h2>[[${product.name}]]</h2>
+	                        <div class="org_price">
+	                          <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
+                              <span>[[${product.discount}]]%</span>
+	                        </div>
+	                        <div class="dis_price">
+	                          <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
+	                        </div>
+						</article>
                       </a>
                     </li>
                   </ol>
@@ -159,7 +89,7 @@
                 <section class="hit">
                     <h3><span>히트상품</span></h3>
                     <article th:each="product:${productsHit}">
-                        <a href="#">
+                        <a th:href="@{/product/view(pid=${product.pid})}">
                             <div class="thumb">
                               <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>
@@ -180,7 +110,7 @@
                 <section class="recommend">
                     <h3><span>추천상품</span></h3>
                     <article th:each="product:${productsRecommend}">
-                        <a href="#">
+                        <a th:href="@{/product/view(pid=${product.pid})}">
                             <div class="thumb">
                               <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>
@@ -201,7 +131,7 @@
                 <section class="new">
                     <h3><span>최신상품</span></h3>
                     <article th:each="product:${productsNew}">
-                        <a href="#">
+                        <a th:href="@{/product/view(pid=${product.pid})}">
                             <div class="thumb">
                               <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>
@@ -222,7 +152,7 @@
                 <section class="discount">
                     <h3><span>할인상품</span></h3>
                     <article th:each="product:${productsDiscount}">
-                        <a href="#">
+                        <a th:href="@{/product/view(pid=${product.pid})}">
                             <div class="thumb">
                               <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb1})}" alt="t1">
                             </div>

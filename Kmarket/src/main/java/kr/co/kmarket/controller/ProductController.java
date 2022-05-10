@@ -47,7 +47,17 @@ public class ProductController {
 		return "/product/list";
 	}
 	
-	
+	@GetMapping("/product/view")
+	public String view(int pid, Model model) {
+		
+		ProductVo product = service.selectProduct(pid);
+		CategoriesVo cates = service.selectCateTitles(product);
+		
+		model.addAttribute("product", product);
+		model.addAttribute("cates", cates);
+		
+		return "/product/view";
+	}
 	@GetMapping("/product/order")
 	public String order() {
 		return "/product/order";
@@ -56,9 +66,6 @@ public class ProductController {
 	public String search() {
 		return "/product/search";
 	}
-	@GetMapping("/product/view")
-	public String view() {
-		return "/product/view";
-	}
+	
 	
 }

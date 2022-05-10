@@ -13,6 +13,7 @@ import kr.co.kmarket.vo.ProductVo;
 public interface ProductDao {
 	
 	
+	public ProductVo selectProduct(int pid);
 	public List<ProductVo> selectProducts(ProductVo vo);
 	public CategoriesVo selectCateTitles(ProductVo vo);
 

@@ -15,6 +15,10 @@ public class ProductService {
 	@Autowired
 	private ProductDao dao;
 	
+	public ProductVo selectProduct(int pid) {
+		return dao.selectProduct(pid);
+	}
+	
 	public List<ProductVo> selectProducts(ProductVo vo){
 		return dao.selectProducts(vo);
 	}

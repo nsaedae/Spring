@@ -24,41 +24,47 @@
 
             <!-- 상품 상세페이지 시작 -->
             <section id="product" class="view">
+            	
+            	<input type="hidden" name="salePrice" th:value="${product.salePrice}"/>
+            
 
                 <!-- 제목, 페이지 네비게이션 -->
                 <nav>
-                    <h1>[블루포스] FreeMovement BLUEFORCE</h1>
-                    <p>
-                        HOME > <span>패션·의류·뷰티</span> > <strong>남성의류</strong>
-                    </p>
+                    <h1>[[${product.name}]]</h1>
+                    <p>HOME > <span>[[${cates.tit1}]]</span> > <strong>[[${cates.tit2}]]</strong></p>
                 </nav>
 
                 <!-- 상품 전체 정보 내용 -->                
                 <article class="info">
                     <div class="image">
-                        <img src="../img/thumb-sample-t1.jpg" alt="상품이미지"/>
+                        <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.thumb2})}" alt="상품이미지">
                     </div>
                     <div class="summary">
                         <nav>
-                            <h1>(주)블루포스</h1>
-                            <h2>상품번호&nbsp;:&nbsp;<span>10010118412</span></h2>
+                            <h1>[[${product.company}]]</h1>
+                            <h2>상품번호&nbsp;:&nbsp;<span>[[${product.pid}]]</span></h2>
                         </nav>
-                        <p>남자 셔츠 남방 남성 와이셔츠 체크남방 스트라이프</p>
+                        <p>[[${product.desc}]]</p>
                         <nav>
-                            <h5 class="rating star4"><a href="#">상품평보기</a></h5>
+                            <h5 th:if="${product.score == 1}" class="rating star1"><a href="#review">상품평보기</a></h5>
+                            <h5 th:if="${product.score == 2}" class="rating star2"><a href="#review">상품평보기</a></h5>
+                            <h5 th:if="${product.score == 3}" class="rating star3"><a href="#review">상품평보기</a></h5>
+                            <h5 th:if="${product.score == 4}" class="rating star4"><a href="#review">상품평보기</a></h5>
+                            <h5 th:if="${product.score == 5}" class="rating star5"><a href="#review">상품평보기</a></h5>
                         </nav>
                         <nav>
                             <div class="org_price">
-                                <del>30,000</del>
-                                <span>10%</span>
+                                <del>[[${#numbers.formatInteger(product.price, 3, 'COMMA')}]]</del>
+                                <span>[[${product.discount}]]%</span>
                             </div>
                             <div class="dis_price">
-                                <ins>27,000</ins>
+                                <ins>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</ins>
                             </div>
                         </nav>
                         <nav>
-                            <span class="delivery">무료배송</span>
-                            <span class="arrival">모레(금) 7/8 도착예정</span>
+                            <span th:if="${product.delivery == 0}" class="delivery">무료배송</span>
+                            <span th:if="${product.delivery != 0}" class="delivery">배송비 [[${#numbers.formatInteger(product.delivery, 3, 'COMMA')}]]원</span>
+                            <span class="arrival">주문 완료 후 1 ~ 2일 후 도착예정</span>
                             <span class="desc">본 상품은 국내배송만 가능합니다.</span>
                         </nav>
                         <nav>
@@ -70,6 +76,42 @@
                         </nav>
                         <img src="../img/vip_plcc_banner.png" alt="100원만 결제해도 1만원 적립!" class="banner" />
                         
+                        <script th:inline="javascript">
+                        
+                        	$(function(){
+                        		
+                        		let inputCount = $('input[name=num]');
+                        		let totalSpan  = $('.total > span'); 
+                        		let count      = inputCount.val();
+                        		let salePrice  = $('input[name=salePrice]').val();
+                        		
+								$('button[class=increase]').click(function(){
+									count++;
+									inputCount.val(count);
+									
+									// 전체 합계 계산 
+									let total = salePrice * count;
+									totalSpan.text(total.toLocaleString());
+								});
+								
+								$('button[class=decrease]').click(function(){
+									count--;
+									
+									if(count <= 0){
+										alert('상품의 최소 수량은 1입니다.');
+										return;
+									}
+									
+									inputCount.val(count);
+									
+									// 전체 합계 계산 
+									let total = salePrice * count;
+									totalSpan.text(total.toLocaleString());
+								});
+                        	});
+                        
+                        </script>
+                        
                         <div class="count">
                             <button class="decrease">-</button>
                             <input type="text" name="num" value="1" readonly/>
@@ -77,7 +119,7 @@
                         </div>
                         
                         <div class="total">
-                            <span>35,000</span>
+                            <span>[[${#numbers.formatInteger(product.salePrice, 3, 'COMMA')}]]</span>
                             <em>총 상품금액</em>
                         </div>
 
@@ -95,8 +137,7 @@
                         <h1>상품정보</h1>
                     </nav>
                     <!-- 상품상세페이지 이미지 -->
-                    <img src="../img/sample_detail1.jpg" alt="">
-                    <img src="../img/sample_detail2.jpg" alt="">
+                    <img th:src="@{/thumb/{cate1}/{cate2}/{img}(cate1=${product.cate1}, cate2=${product.cate2}, img=${product.detail})}" alt="상품 상세 이미지"/>
                 </article>
 
                 <!-- 상품 정보 제공 고시 내용 -->
@@ -108,76 +149,31 @@
                     <table border="0">
                         <tr>
                             <td>상품번호</td>
-                            <td>10110125435</td>
+                            <td>[[${product.pid}]]</td>
                         </tr>
                         <tr>
                             <td>상품상태</td>
-                            <td>새상품</td>
+                            <td>[[${product.status}]]</td>
                         </tr>
                         <tr>
                             <td>부가세 면세여부</td>
-                            <td>과세상품</td>
+                            <td>[[${product.dutyFree}]]</td>
                         </tr>
                         <tr>
                             <td>영수증발행</td>
-                            <td>발행가능 - 신용카드 전표, 온라인 현금영수증</td>
+                            <td>[[${product.receipt}]]</td>
                         </tr>
                         <tr>
                             <td>사업자구분</td>
-                            <td>사업자 판매자</td>
+                            <td>[[${product.bizClass}]]</td>
                         </tr>
                         <tr>
                             <td>브랜드</td>
-                            <td>블루포스</td>
+                            <td>[[${product.company}]]</td>
                         </tr>
                         <tr>
                             <td>원산지</td>
-                            <td>국내생산</td>
-                        </tr>
-                    </table>
-                    <table border="0">
-                        <tr>
-                            <td>제품소재</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>색상</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>치수</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>제조자/수입국</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>제조국</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>취급시 주의사항</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>제조연월</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>품질보증기준</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>A/S 책임자와 전화번호</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                            <td>주문후 예상 배송기간</td>
-                            <td>상세정보 직접입력</td>
-                        </tr>
-                        <tr>
-                        <td colspan="2">구매, 교환, 반품, 배송, 설치 등과 관련하여 추가비용, 제한조건 등의 특이사항이 있는 경우</td>
+                            <td>[[${product.origin}]]</td>
                         </tr>
                     </table>
                     <p class="notice">
@@ -191,7 +187,7 @@
                 </article>
                 
                 <!-- 상품 리뷰 내용 -->
-                <article class="review">
+                <article id="review" class="review">
                     <nav>
                         <h1>상품리뷰</h1>
                     </nav>

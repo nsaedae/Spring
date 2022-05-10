@@ -31,7 +31,7 @@ public class ProductController {
 	public String list(ProductVo vo, Model model) {
 		
 		int start = 0;
-		int order = 1;
+		int order = vo.getOrder();
 		
 		vo.setStart(start);
 		vo.setOrder(order);
@@ -41,6 +41,8 @@ public class ProductController {
 		
 		model.addAttribute("products", products);
 		model.addAttribute("cates", cates);
+		model.addAttribute("order", order);
+		
 		
 		return "/product/list";
 	}

@@ -15,7 +15,7 @@
 	</select>
 	
 	<select id="selectCateTitles" resultType="kr.co.kmarket.vo.CategoriesVo">
-		SELECT c1.title AS tit1, c2.title AS tit2 
+		SELECT c2.cate1, c2.cate2, c1.title AS tit1, c2.title AS tit2 
 		FROM `km_product_cate1` AS c1
 		JOIN `km_product_cate2` AS c2
 		ON c1.cate1 = c2.cate1

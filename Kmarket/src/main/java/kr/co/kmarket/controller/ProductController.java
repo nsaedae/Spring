@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
@@ -17,21 +18,27 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import kr.co.kmarket.service.ProductService;
 import kr.co.kmarket.vo.CartVo;
 import kr.co.kmarket.vo.CategoriesVo;
+import kr.co.kmarket.vo.MemberVo;
 import kr.co.kmarket.vo.ProductVo;
 
-
+@SessionAttributes("sessMember")
 @Controller
 public class ProductController {
 
 	@Autowired
 	private ProductService service;
 	
+	// 최초에 sessMember값 초기화하는 메서드 
+	@ModelAttribute("sessMember")
+	public MemberVo setMemberVo() {
+		return null;
+	}
+	
 	
 	@GetMapping("/product/cart")
 	public String cart(HttpSession sess) {
 		
 		//service.selectCarts(uid);
-		
 		
 		return "/product/cart";
 	}

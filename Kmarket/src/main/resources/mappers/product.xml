@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="kr.co.kmarket.dao.ProductDao">
-
-
+	
 
 	<select id="selectProduct" resultType="kr.co.kmarket.vo.ProductVo">
 		SELECT *, FLOOR(`price` * (1 - `discount`/100)) AS `salePrice` FROM `km_product` 
@@ -29,6 +28,21 @@
 		ON c1.cate1 = c2.cate1
 		WHERE c2.cate1=#{cate1} AND c2.cate2=#{cate2};
 	</select>
+
+
+	<insert id="insertCart">
+		INSERT INTO `km_product_cart` SET
+		`uid`=#{uid},
+		`pid`=#{pid},
+		`count`=#{count},
+		`price`=#{price},
+		`discount`=#{discount},
+		`point`=#{point},
+		`delivery`=#{delivery},
+		`total`=#{total},
+		`rdate`=NOW();
+	</insert>
+	
 
 
 

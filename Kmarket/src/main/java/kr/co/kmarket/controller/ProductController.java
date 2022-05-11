@@ -1,13 +1,17 @@
 package kr.co.kmarket.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import kr.co.kmarket.service.ProductService;
+import kr.co.kmarket.vo.CartVo;
 import kr.co.kmarket.vo.CategoriesVo;
 import kr.co.kmarket.vo.ProductVo;
 
@@ -22,6 +26,19 @@ public class ProductController {
 	public String cart() {
 		return "/product/cart";
 	}
+	
+	@PostMapping("/product/cart")
+	public Map<String, Integer> cart(CartVo vo) {
+		
+		int result = service.insertCart(vo);
+		//int result = 1;
+		
+		Map<String, Integer> jsonData = new HashMap<>();
+		jsonData.put("result", result);
+		
+		return jsonData;
+	}
+	
 	@GetMapping("/product/complete")
 	public String complete() {
 		return "/product/complete";

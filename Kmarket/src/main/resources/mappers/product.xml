@@ -43,6 +43,10 @@
 		`rdate`=NOW();
 	</insert>
 	
+	<select id="selectCarts" resultType="kr.co.kmarket.vo.CartVo">
+		SELECT * FROM `km_product_cart` WHERE `uid`=#{uid};
+	</select>
+	
 
 
 

@@ -4,16 +4,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 import kr.co.kmarket.service.ProductService;
 import kr.co.kmarket.vo.CartVo;
 import kr.co.kmarket.vo.CategoriesVo;
 import kr.co.kmarket.vo.ProductVo;
+
 
 @Controller
 public class ProductController {
@@ -23,10 +28,15 @@ public class ProductController {
 	
 	
 	@GetMapping("/product/cart")
-	public String cart() {
+	public String cart(HttpSession sess) {
+		
+		//service.selectCarts(uid);
+		
+		
 		return "/product/cart";
 	}
 	
+	@ResponseBody
 	@PostMapping("/product/cart")
 	public Map<String, Integer> cart(CartVo vo) {
 		

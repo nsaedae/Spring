@@ -19,5 +19,5 @@ public interface ProductDao {
 
 	//장바구니
 	public int insertCart(CartVo vo);
-	
+	public List<CartVo> selectCarts(String uid);
 }

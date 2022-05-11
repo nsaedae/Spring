@@ -12,15 +12,15 @@
         </header>
         <main>
             <div id="member-login">
-                <img src="./img/member_txt_login.gif" alt="로그인" />
-				<form action="#">
+                <img th:src="@{/img/member/member_txt_login.gif}" alt="로그인" />
+				<form th:action="@{/member/login}" method="post">
 					<div>
 						<label>
-							<span><img src="./img/member_txt_id.gif" alt="아이디"></span> 
+							<span><img th:src="@{/img/member/member_txt_id.gif}" alt="아이디"></span> 
 							<input type="text" name="uid" />
 						</label>
 						<label>
-							<span><img src="./img/member_txt_pass.gif" alt="비밀번호"></span> 
+							<span><img th:src="@{/img/member/member_txt_pass.gif}" alt="비밀번호"></span> 
 							<input type="password" name="pass" />
 						</label>
 					</div>
@@ -31,7 +31,7 @@
 						<a href="#">회원가입</a>
 					</span>
 				</form>
-				<img src="./img/member_certifi_logo.gif" alt="banner">
+				<img th:src="@{/img/member/member_certifi_logo.gif}" alt="banner">
             </div>
         </main>        
         <th:block th:include="@{_footer.html}"/>

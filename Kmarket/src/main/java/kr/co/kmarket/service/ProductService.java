@@ -31,4 +31,8 @@ public class ProductService {
 	public int insertCart(CartVo vo) {
 		return dao.insertCart(vo);
 	}
+	
+	public List<CartVo> selectCarts(String uid){
+		return dao.selectCarts(uid);
+	}
 }

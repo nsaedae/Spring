@@ -29,7 +29,7 @@ public class MainController {
 	}
 	
 	@GetMapping(value = {"/", "/index"})
-	public String index(@ModelAttribute("sessMember")MemberVo sessMember, Model model) {
+	public String index(Model model) {
 		
 		List<ProductVo> productsHit 	  = service.selectMainProducts("hit");
 		List<ProductVo> productsRecommend = service.selectMainProducts("score");

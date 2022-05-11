@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
@@ -18,6 +19,13 @@ public class MemberController {
 	@Autowired
 	private MemberService service;
 
+	// 최초에 sessMember값 초기화하는 메서드 
+	@ModelAttribute("sessMember")
+	public MemberVo setMemberVo() {
+		return null;
+	}
+	
+	
 	@GetMapping("/member/join")
 	public String join() {
 		return "/member/join";

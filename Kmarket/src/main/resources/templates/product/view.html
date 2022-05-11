@@ -83,7 +83,7 @@
 
             <!-- 상품 상세페이지 시작 -->
             <section id="product" class="view">
-            	<input type="hidden" name="uid" 		th:value="abcd"/>
+            	<input type="hidden" name="uid" 		th:value="${sessMember.uid}"/>
             	<input type="hidden" name="pid" 		th:value="${product.pid}"/>            	
             	<input type="hidden" name="price" 		th:value="${product.price}"/>
             	<input type="hidden" name="discount" 	th:value="${product.discount}"/>

@@ -36,11 +36,19 @@ public class ProductController {
 	
 	
 	@GetMapping("/product/cart")
-	public String cart(HttpSession sess) {
+	public String cart(@ModelAttribute("sessMember")MemberVo sessMember, Model model) {
 		
-		//service.selectCarts(uid);
-		
-		return "/product/cart";
+		if(sessMember == null) {
+			return "redirect:/member/login";
+		}else {
+			
+			String uid = sessMember.getUid();
+			List<CartVo> carts = service.selectCarts(uid);
+			
+			model.addAttribute("carts", carts);
+			
+			return "/product/cart";
+		}
 	}
 	
 	@ResponseBody

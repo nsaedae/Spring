@@ -44,7 +44,11 @@
 	</insert>
 	
 	<select id="selectCarts" resultType="kr.co.kmarket.vo.CartVo">
-		SELECT * FROM `km_product_cart` WHERE `uid`=#{uid};
+		SELECT a.*, b.cate1, b.cate2, b.name, b.desc, b.thumb1
+		FROM `km_product_cart` AS a
+		JOIN `km_product` AS b
+		ON a.pid = b.pid		
+		WHERE `uid`=#{uid};
 	</select>
 	
 

@@ -18,4 +18,10 @@ public class CartVo {
 	private int total;
 	private String rdate;
 	
+	//추가필드
+	private int cate1;
+	private int cate2;
+	private String name;
+	private String desc;
+	private String thumb1;
 }

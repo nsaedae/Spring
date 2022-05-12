@@ -100,10 +100,12 @@ public class ProductController {
 		
 		return "/product/view";
 	}
+	
 	@GetMapping("/product/order")
 	public String order() {
 		return "/product/order";
 	}
+	
 	@GetMapping("/product/search")
 	public String search() {
 		return "/product/search";

@@ -30,6 +30,9 @@
 	</select>
 
 
+
+	
+	<!-- 장바구니 -->
 	<insert id="insertCart">
 		INSERT INTO `km_product_cart` SET
 		`uid`=#{uid},
@@ -58,7 +61,25 @@
 		</foreach>
 	</delete>
 	
-
+	<!-- 주문 -->
+	<insert id="insertOrder" useGeneratedKeys="true" keyProperty="oid">
+		INSERT INTO `km_product_order` SET 
+			`uid`=#{uid},
+			`count`=#{count},
+			`price`=#{price},
+			`discount`=#{discount},
+			`delivery`=#{delivery},
+			`point`=#{point},
+			`total`=#{total},
+			`rdate`=NOW();
+	</insert>
+	
+	<insert id="insertOrderDetail">
+		INSERT INTO `km_product_order_detail` SET
+			`oid`=#{oid},
+			`pid`=#{pid},
+			`cnt`=#{count};
+	</insert>
 
 
 </mapper>

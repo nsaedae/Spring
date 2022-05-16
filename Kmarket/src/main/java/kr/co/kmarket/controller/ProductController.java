@@ -19,6 +19,7 @@ import kr.co.kmarket.service.ProductService;
 import kr.co.kmarket.vo.CartVo;
 import kr.co.kmarket.vo.CategoriesVo;
 import kr.co.kmarket.vo.MemberVo;
+import kr.co.kmarket.vo.OrderVo;
 import kr.co.kmarket.vo.ProductVo;
 
 @SessionAttributes("sessMember")
@@ -117,10 +118,29 @@ public class ProductController {
 		return "/product/order";
 	}
 	
+	@ResponseBody
+	@PostMapping("/product/order")
+	public Map<String, Integer> order(OrderVo vo) {
+		
+		// 주문장 등록
+		int oid = service.insertOrder(vo);
+		
+		// 개별 상품 등록
+		int[] counts = vo.getCounts();
+		int i = 0;
+		for(int pid : vo.getPids()) {
+			service.insertOrderDetail(oid, pid, counts[i]);
+			i++;
+		}
+		
+		Map<String, Integer> map = new HashMap<>();
+		map.put("result", oid);
+		
+		return map;
+	}
+	
 	@GetMapping("/product/search")
 	public String search() {
 		return "/product/search";
 	}
-	
-	
 }

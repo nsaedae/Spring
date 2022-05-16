@@ -135,6 +135,40 @@
 				aggregation();				
 			});
 			
+			////////////////////////////////////
+			// 장바구니 삭제
+			////////////////////////////////////
+			$('input[name=del]').click(function(){
+				
+				let productChk = $('input[name=productChk]:checked');
+				let cids = [];
+				
+				if(productChk.length == 0){
+					alert('삭제할려는 상품을 선택하세요.');
+					return;
+				}
+				
+				$.each(productChk, function(){
+					cids.push($(this).val());
+				});
+				
+				console.log(cids);
+				let jsonData = {"cids": cids};
+				
+				$.ajax({
+					url:'/product/cartDelete',
+					type:'get',
+					traditional: true,  /* 배열을 전송을 위한 옵션 */
+					data: jsonData,
+					dataType:'json',
+					success: function(data){
+						//alert(data.result);
+						location.href='/product/cart';						
+					}
+				});
+				
+			});
+			
 		});
     </script>
     
@@ -181,7 +215,7 @@
                     </tr>
                     
                     <tr th:each="product:${carts}">
-                      <td><input type="checkbox" name="productChk" th:value="${product.pid}" checked></td>
+                      <td><input type="checkbox" name="productChk" th:value="${product.cid}" checked></td>
                       <td>
                         <article>
                           <a href="#">
@@ -202,7 +236,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <input type="button" name="del" value="선택삭제">
+                <input type="button" name="del" value="선택삭제"/>
 
                 <!-- 장바구니 전체합계 -->
                 <div class="total">

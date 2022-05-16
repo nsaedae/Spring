@@ -52,6 +52,17 @@ public class ProductController {
 	}
 	
 	@ResponseBody
+	@GetMapping("/product/cartDelete")
+	public Map<String, Integer> cartDelete(int[] cids) {
+		int result = service.deleteCart(cids);
+		
+		Map<String, Integer> map = new HashMap<>();
+		map.put("result", result);
+		
+		return map;
+	}
+	
+	@ResponseBody
 	@PostMapping("/product/cart")
 	public Map<String, Integer> cart(CartVo vo) {
 		

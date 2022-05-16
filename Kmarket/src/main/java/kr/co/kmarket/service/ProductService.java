@@ -35,4 +35,8 @@ public class ProductService {
 	public List<CartVo> selectCarts(String uid){
 		return dao.selectCarts(uid);
 	}
+	
+	public int deleteCart(int[] cids) {
+		return dao.deleteCart(cids);
+	}
 }

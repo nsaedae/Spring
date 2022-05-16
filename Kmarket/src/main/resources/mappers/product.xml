@@ -51,6 +51,13 @@
 		WHERE `uid`=#{uid};
 	</select>
 	
+	<delete id="deleteCart">
+		DELETE FROM `km_product_cart` WHERE `cid` IN
+		<foreach collection="array" item="cid" open="(" close=")" separator=",">
+			#{cid}
+		</foreach>
+	</delete>
+	
 
 
 

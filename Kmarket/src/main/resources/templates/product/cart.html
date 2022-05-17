@@ -224,7 +224,7 @@
 					dataType: 'json',
 					success: function(data){
 						//주문페이지 이동
-						location.href='/product/order';
+						location.href='/product/order?oid='+data.result;
 					}
 				});
 			});
